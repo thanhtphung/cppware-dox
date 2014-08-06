@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,12 +70,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('IfSpeed_8cpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,11 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_af1bdc31e767fc0a01456b55cffb4c06.html">netkit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">IfSpeed.cpp</div>  </div>
@@ -105,10 +123,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> KBPS = 1000ULL;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> MBPS = 1000000ULL;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;BEGIN_NAMESPACE1(netkit)</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacenetkit.html">   20</a></span>&#160;BEGIN_NAMESPACE1(netkit)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;IfSpeed::IfSpeed(const <a class="code" href="classappkit_1_1String.html">String</a>&amp; speed)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="classnetkit_1_1IfSpeed.html">IfSpeed</a>::<a class="code" href="classnetkit_1_1IfSpeed.html">IfSpeed</a>(const <a class="code" href="classappkit_1_1String.html">String</a>&amp; speed)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">size_t</span> bytesUsed;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">double</span> d64 = <a class="code" href="classappkit_1_1D64.html">D64</a>(speed, &amp;bytesUsed);</div>
@@ -167,22 +185,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        unit = <span class="stringliteral">&quot;bps&quot;</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    sprintf(s, <span class="stringliteral">&quot;%.4g %s&quot;</span>, speed, unit);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">sprintf</a>(s, <span class="stringliteral">&quot;%.4g %s&quot;</span>, speed, unit);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> s;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;END_NAMESPACE1</div>
 <div class="ttc" id="crt_8hpp_html"><div class="ttname"><a href="crt_8hpp.html">crt.hpp</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a4ad8f90e612748f3870978e79c236efe"><div class="ttname"><a href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">appkit::sprintf</a></div><div class="ttdeci">int sprintf(String &amp;buf, const char *format,...) GCC_ATTR((format(printf</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00117">crt-linux.cpp:117</a></div></div>
+<div class="ttc" id="classnetkit_1_1IfSpeed_html"><div class="ttname"><a href="classnetkit_1_1IfSpeed.html">netkit::IfSpeed</a></div><div class="ttdoc">network interface speed </div><div class="ttdef"><b>Definition:</b> <a href="IfSpeed_8hpp_source.html#l00016">IfSpeed.hpp:16</a></div></div>
 <div class="ttc" id="classappkit_1_1Str_html_a0b9d1e57d5fcef54b620869b4002b621"><div class="ttname"><a href="classappkit_1_1Str.html#a0b9d1e57d5fcef54b620869b4002b621">appkit::Str::compareKI</a></div><div class="ttdeci">static int compareKI(const void *item0, const void *item1)</div><div class="ttdef"><b>Definition:</b> <a href="Str_8cpp_source.html#l00364">Str.cpp:364</a></div></div>
 <div class="ttc" id="classappkit_1_1D64_html"><div class="ttname"><a href="classappkit_1_1D64.html">appkit::D64</a></div><div class="ttdoc">64-bit real number </div><div class="ttdef"><b>Definition:</b> <a href="D64_8hpp_source.html#l00017">D64.hpp:17</a></div></div>
 <div class="ttc" id="classappkit_1_1String_html"><div class="ttname"><a href="classappkit_1_1String.html">appkit::String</a></div><div class="ttdoc">UTF-capable copy-on-write string. </div><div class="ttdef"><b>Definition:</b> <a href="String_8hpp_source.html#l00023">String.hpp:23</a></div></div>
 <div class="ttc" id="classappkit_1_1String_html_a033884717c2dbd9e0e93499d4d18dc80"><div class="ttname"><a href="classappkit_1_1String.html#a033884717c2dbd9e0e93499d4d18dc80">appkit::String::trimSpace</a></div><div class="ttdeci">void trimSpace(bool trimL=true, bool trimR=true)</div><div class="ttdef"><b>Definition:</b> <a href="String_8cpp_source.html#l01517">String.cpp:1517</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:52 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_af1bdc31e767fc0a01456b55cffb4c06.html">netkit</a></li><li class="navelem"><b>IfSpeed.cpp</b></li>
+    <li class="footer">Generated on Wed Aug 6 2014 08:15:55 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

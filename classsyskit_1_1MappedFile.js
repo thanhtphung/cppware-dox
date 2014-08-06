@@ -1,0 +1,27 @@
+var classsyskit_1_1MappedFile =
+[
+    [ "MappedFile", "classsyskit_1_1MappedFile.html#ad75792539f0a7863bb2e315fac587216", null ],
+    [ "MappedFile", "classsyskit_1_1MappedFile.html#a3925384c3ba1aec68375eee02bf2643a", null ],
+    [ "~MappedFile", "classsyskit_1_1MappedFile.html#a787c815d449ffc935d82e24d1764c8b5", null ],
+    [ "addrOf", "classsyskit_1_1MappedFile.html#a05981007ad2f3186c7f2a36cc27328a8", null ],
+    [ "addrOf", "classsyskit_1_1MappedFile.html#a35038490fc6ff04a1a15827e3ec9c771", null ],
+    [ "copyBytes", "classsyskit_1_1MappedFile.html#ab0eafa8c51ae28cff404cd7bddc257ec", null ],
+    [ "getBytes", "classsyskit_1_1MappedFile.html#a874484c44d0164069951726928de1bc3", null ],
+    [ "grow", "classsyskit_1_1MappedFile.html#ada359116a3b249f6d136affe6b394eeb", null ],
+    [ "handle", "classsyskit_1_1MappedFile.html#af15a5819ce0a5b564b0d093eb4f3fee8", null ],
+    [ "isOk", "classsyskit_1_1MappedFile.html#a261de8428e485797b0c000a6f7f04685", null ],
+    [ "isReadOnly", "classsyskit_1_1MappedFile.html#a49c1cacf7aea8e5942e39db819c04fc1", null ],
+    [ "loadFrom", "classsyskit_1_1MappedFile.html#a7c206ab704e78fb886dba051a8640f63", null ],
+    [ "map", "classsyskit_1_1MappedFile.html#ab7b6b5281a453cd4634c826a7cce014c", null ],
+    [ "map", "classsyskit_1_1MappedFile.html#af411237ebe5b9a04ee38d3734297be52", null ],
+    [ "mapSize", "classsyskit_1_1MappedFile.html#a5af5a845a24df65731b09704a823df34", null ],
+    [ "numMaps", "classsyskit_1_1MappedFile.html#a2f0e30846f147687a33bd0757cedee30", null ],
+    [ "offset", "classsyskit_1_1MappedFile.html#ab275fb50891bbff0e489ddd1f20cfac0", null ],
+    [ "path", "classsyskit_1_1MappedFile.html#ada19a030acd42f55d171ed8a547fba54", null ],
+    [ "remap", "classsyskit_1_1MappedFile.html#ad1d9d0632450fe02b41bb8751760c855", null ],
+    [ "resize", "classsyskit_1_1MappedFile.html#a642cb5f5e83e8bd423c14f49dfdfea2e", null ],
+    [ "saveIn", "classsyskit_1_1MappedFile.html#a75fdd7e4ab3e47a093ccaa3a713d865b", null ],
+    [ "setBytes", "classsyskit_1_1MappedFile.html#a15434e87eabf86269605d3e0178626dd", null ],
+    [ "size", "classsyskit_1_1MappedFile.html#a841855191856d26a393a0fc8e620876c", null ],
+    [ "truncate", "classsyskit_1_1MappedFile.html#a682e3c5e11fa071b7430b26358b2a44b", null ]
+];

@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,12 +70,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Singleton_8cpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,11 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_351abf213761a1269475f1df2ceaa54c.html">syskit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Singleton.cpp</div>  </div>
@@ -111,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classsyskit_1_1Singleton.html#ab97a674ca0d2cc7c6fc5525806829c16">   23</a></span>&#160;<span class="comment"></span><a class="code" href="classsyskit_1_1Singleton.html">Singleton</a>::<a class="code" href="classsyskit_1_1Singleton.html">Singleton</a>(const <span class="keywordtype">char</span>* <span class="keywordtype">id</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> initialRefCount):</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<a class="code" href="classsyskit_1_1RefCounted.html">RefCounted</a>(initialRefCount)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    id_ = syskit::strdup(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    id_ = <a class="code" href="namespacesyskit.html#aaa681ced755c9c442c1a785d66118d69">syskit::strdup</a>(<span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Singleton construction must be through getSingleton(). The singleton vector</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// is already locked at this point.</span></div>
@@ -184,6 +202,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;END_NAMESPACE1</div>
 <div class="ttc" id="classsyskit_1_1CriSection_html"><div class="ttname"><a href="classsyskit_1_1CriSection.html">syskit::CriSection</a></div><div class="ttdoc">section of critical code which needs synchronization across threads </div><div class="ttdef"><b>Definition:</b> <a href="CriSection_8hpp_source.html#l00014">CriSection.hpp:14</a></div></div>
 <div class="ttc" id="classsyskit_1_1Foundation_html"><div class="ttname"><a href="classsyskit_1_1Foundation.html">syskit::Foundation</a></div><div class="ttdoc">foundation for syskit classes </div><div class="ttdef"><b>Definition:</b> <a href="Foundation_8hpp_source.html#l00020">Foundation.hpp:20</a></div></div>
+<div class="ttc" id="namespacesyskit_html_aaa681ced755c9c442c1a785d66118d69"><div class="ttname"><a href="namespacesyskit.html#aaa681ced755c9c442c1a785d66118d69">syskit::strdup</a></div><div class="ttdeci">char * strdup(const char *src)</div><div class="ttdef"><b>Definition:</b> <a href="sys_8hpp_source.html#l00078">sys.hpp:78</a></div></div>
 <div class="ttc" id="classsyskit_1_1RefCounted_html"><div class="ttname"><a href="classsyskit_1_1RefCounted.html">syskit::RefCounted</a></div><div class="ttdoc">reference-counted object </div><div class="ttdef"><b>Definition:</b> <a href="RefCounted_8hpp_source.html#l00015">RefCounted.hpp:15</a></div></div>
 <div class="ttc" id="classsyskit_1_1Singleton_html"><div class="ttname"><a href="classsyskit_1_1Singleton.html">syskit::Singleton</a></div><div class="ttdoc">per-process singleton </div><div class="ttdef"><b>Definition:</b> <a href="Singleton_8hpp_source.html#l00015">Singleton.hpp:15</a></div></div>
 <div class="ttc" id="classsyskit_1_1Vec_html_a720c6f9fd1150e5a00fc250fb1c537ab"><div class="ttname"><a href="classsyskit_1_1Vec.html#a720c6f9fd1150e5a00fc250fb1c537ab">syskit::Vec::rm</a></div><div class="ttdeci">bool rm(const void *item, bool maintainOrder=false)</div><div class="ttdef"><b>Definition:</b> <a href="Vec_8cpp_source.html#l00362">Vec.cpp:362</a></div></div>
@@ -194,11 +213,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classsyskit_1_1CriSection_1_1Lock_html"><div class="ttname"><a href="classsyskit_1_1CriSection_1_1Lock.html">syskit::CriSection::Lock</a></div><div class="ttdoc">critical section lock </div><div class="ttdef"><b>Definition:</b> <a href="CriSection_8hpp_source.html#l00049">CriSection.hpp:49</a></div></div>
 <div class="ttc" id="classsyskit_1_1Vec_html_a5a6cd2efcb4be22e9b570fbd3eb1c128"><div class="ttname"><a href="classsyskit_1_1Vec.html#a5a6cd2efcb4be22e9b570fbd3eb1c128">syskit::Vec::find</a></div><div class="ttdeci">bool find(const void *item, diff_t diff) const </div><div class="ttdoc">Locate given item using linear search. Return true if found. </div><div class="ttdef"><b>Definition:</b> <a href="Vec_8hpp_source.html#l00247">Vec.hpp:247</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:53 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_351abf213761a1269475f1df2ceaa54c.html">syskit</a></li><li class="navelem"><b>Singleton.cpp</b></li>
+    <li class="footer">Generated on Wed Aug 6 2014 08:15:56 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

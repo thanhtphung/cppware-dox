@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,12 +70,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('XmlDoc_8hpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,11 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">XmlDoc.hpp</div>  </div>
@@ -420,7 +438,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">//! Reset XmlDoc instance with given XML stream. Resulting document might not be</span></div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">//! okay if given XML stream is malformed. Use XmlDoc::isOk() and XmlDoc::errDesc()</span></div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">//! for validation.</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment"></span><span class="keyword">inline</span> <span class="keyword">const</span> std::istream&amp; operator &gt;&gt;(<span class="keyword">const</span> std::istream&amp; is, <a class="code" href="classappkit_1_1XmlDoc.html">XmlDoc</a>&amp; doc)</div>
+<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="namespaceappkit.html#a266a16e819bdacb3d420e2063596fb80">  335</a></span>&#160;<span class="comment"></span><span class="keyword">inline</span> <span class="keyword">const</span> std::istream&amp; operator &gt;&gt;(<span class="keyword">const</span> std::istream&amp; is, <a class="code" href="classappkit_1_1XmlDoc.html">XmlDoc</a>&amp; doc)</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;{</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    doc.<a class="code" href="classappkit_1_1XmlDoc.html#ad842ddf20691c27ea50ba3185f8a5a68">loadFrom</a>(is);</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">return</span> is;</div>
@@ -428,7 +446,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">//! Append the XML form of the XmlDoc instance to the given output stream. Return</span></div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment">//! the resulting output stream.</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment"></span><span class="keyword">inline</span> std::ostream&amp; operator &lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classappkit_1_1XmlDoc.html">XmlDoc</a>&amp; doc)</div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="namespaceappkit.html#a49b16f0f9a967a334441fe2682ca87fb">  343</a></span>&#160;<span class="comment"></span><span class="keyword">inline</span> std::ostream&amp; operator &lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classappkit_1_1XmlDoc.html">XmlDoc</a>&amp; doc)</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;{</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <a class="code" href="classappkit_1_1String.html">String</a> xml(doc.<a class="code" href="classappkit_1_1XmlDoc.html#a535df85fa5f369140abe2229ac619905">toXml</a>());</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">return</span> os.write(xml.ascii(), <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>(xml.length()));</div>
@@ -451,11 +469,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classappkit_1_1XmlDoc_html_a535df85fa5f369140abe2229ac619905"><div class="ttname"><a href="classappkit_1_1XmlDoc.html#a535df85fa5f369140abe2229ac619905">appkit::XmlDoc::toXml</a></div><div class="ttdeci">String toXml() const </div><div class="ttdef"><b>Definition:</b> <a href="XmlDoc_8cpp_source.html#l00085">XmlDoc.cpp:85</a></div></div>
 <div class="ttc" id="classappkit_1_1XmlProlog_html"><div class="ttname"><a href="classappkit_1_1XmlProlog.html">appkit::XmlProlog</a></div><div class="ttdoc">xml document prolog </div><div class="ttdef"><b>Definition:</b> <a href="XmlProlog_8hpp_source.html#l00019">XmlProlog.hpp:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:51 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li><li class="navelem"><b>XmlDoc.hpp</b></li>
+    <li class="footer">Generated on Wed Aug 6 2014 08:15:54 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

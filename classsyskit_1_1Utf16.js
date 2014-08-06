@@ -1,0 +1,27 @@
+var classsyskit_1_1Utf16 =
+[
+    [ "DefaultChar", "classsyskit_1_1Utf16.html#a4924a1a4f93dfe0c008b20082966ae0daad1dc4ce333a80e1541e8e28f0025884", null ],
+    [ "MaxChar", "classsyskit_1_1Utf16.html#a4924a1a4f93dfe0c008b20082966ae0da8725d2aa97e0a7a552cf849e5fab7298", null ],
+    [ "MinReserved", "classsyskit_1_1Utf16.html#a4924a1a4f93dfe0c008b20082966ae0daa048cb1cccc60806129c6e577eb9042c", null ],
+    [ "MaxReserved", "classsyskit_1_1Utf16.html#a4924a1a4f93dfe0c008b20082966ae0da2d6057d23538f7cb9bc1e9f77aebcd1c", null ],
+    [ "HiHalfMin", "classsyskit_1_1Utf16.html#a4924a1a4f93dfe0c008b20082966ae0daa1b9f73c8fa4c06b3bfb6ac4f4ed485f", null ],
+    [ "HiHalfMax", "classsyskit_1_1Utf16.html#a4924a1a4f93dfe0c008b20082966ae0daed61fcea626a2c8317e73ce1cf7f2ac6", null ],
+    [ "LoHalfMin", "classsyskit_1_1Utf16.html#a4924a1a4f93dfe0c008b20082966ae0da036eef273bac9d84d0d3a1b7f6a47752", null ],
+    [ "LoHalfMax", "classsyskit_1_1Utf16.html#a4924a1a4f93dfe0c008b20082966ae0da02643f62c9c46c30590d249eb6703232", null ],
+    [ "MinSeqLength", "classsyskit_1_1Utf16.html#a4924a1a4f93dfe0c008b20082966ae0dab94ec684db0ef2e4a8c7318cd87eab95", null ],
+    [ "MaxSeqLength", "classsyskit_1_1Utf16.html#a4924a1a4f93dfe0c008b20082966ae0da60759a09e38cbd9964bfce19a2952120", null ],
+    [ "Utf16", "classsyskit_1_1Utf16.html#afcfb1440c4cd3d9d508523d46bb59242", null ],
+    [ "Utf16", "classsyskit_1_1Utf16.html#a3122cd71647e59d7ce9b48d551b9fc22", null ],
+    [ "Utf16", "classsyskit_1_1Utf16.html#a7b49b2a036234145ca07d4f13249016f", null ],
+    [ "Utf16", "classsyskit_1_1Utf16.html#a0bc133da16c0fe40941801884d62b15a", null ],
+    [ "asU32", "classsyskit_1_1Utf16.html#ac0b9f1ffac8f12065722165a76afdf24", null ],
+    [ "decode", "classsyskit_1_1Utf16.html#aeed4bbefcd328b8d9494146c07cb377a", null ],
+    [ "encode", "classsyskit_1_1Utf16.html#afc2422b9042b8a05bfe3f8f4b5c70cd8", null ],
+    [ "getSeqLength", "classsyskit_1_1Utf16.html#ada55978a33c8d6899d3ca35054f67d3e", null ],
+    [ "operator utf32_t", "classsyskit_1_1Utf16.html#aea7cd7f057b9e237052e06a624d99224", null ],
+    [ "operator=", "classsyskit_1_1Utf16.html#afca4ad1ae85c7a7cef90b90c3f31f98b", null ],
+    [ "operator=", "classsyskit_1_1Utf16.html#af755ade7826a8eab36c61ca4b0828319", null ],
+    [ "operator=", "classsyskit_1_1Utf16.html#a2de79f84f1429637993184c6631b6f41", null ],
+    [ "operator=", "classsyskit_1_1Utf16.html#a9bb8a7fbf356ce327f43c72480112b05", null ],
+    [ "resetWithValidChar", "classsyskit_1_1Utf16.html#ae9dae70b42c190bf937387788f46a455", null ]
+];

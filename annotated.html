@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -66,12 +74,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('annotated.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock">Here are the classes, structs, unions and interfaces with brief descriptions:</div><div class="directory">
 <div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span><span onclick="javascript:toggleLevel(3);">3</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><b>appkit</b></td><td class="desc"></td></tr>
+<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="namespaceappkit.html" target="_self">appkit</a></td><td class="desc"></td></tr>
 <tr id="row_0_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classappkit_1_1App.html" target="_self">App</a></td><td class="desc">Application singleton </td></tr>
 <tr id="row_0_1_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classappkit_1_1Bool.html" target="_self">Bool</a></td><td class="desc">Boolean value </td></tr>
 <tr id="row_0_2_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classappkit_1_1BufPoolCmd.html" target="_self">BufPoolCmd</a></td><td class="desc">Dbug commands to troubleshoot BufPool usage </td></tr>
@@ -171,7 +193,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr id="row_0_60_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classappkit_1_1XmlElement.html" target="_self">XmlElement</a></td><td class="desc">Xml element </td></tr>
 <tr id="row_0_61_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classappkit_1_1XmlLexer.html" target="_self">XmlLexer</a></td><td class="desc">Xml lexical analyzer </td></tr>
 <tr id="row_0_62_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classappkit_1_1XmlProlog.html" target="_self">XmlProlog</a></td><td class="desc">Xml document prolog </td></tr>
-<tr id="row_1_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_1_" class="arrow" onclick="toggleFolder('1_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><b>netkit</b></td><td class="desc"></td></tr>
+<tr id="row_1_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_1_" class="arrow" onclick="toggleFolder('1_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="namespacenetkit.html" target="_self">netkit</a></td><td class="desc"></td></tr>
 <tr id="row_1_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classnetkit_1_1IfSpeed.html" target="_self">IfSpeed</a></td><td class="desc">Network interface speed </td></tr>
 <tr id="row_1_1_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classnetkit_1_1IpAddr.html" target="_self">IpAddr</a></td><td class="desc">IPv4 address </td></tr>
 <tr id="row_1_2_" class="even" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_1_2_" class="arrow" onclick="toggleFolder('1_2_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classnetkit_1_1IpAddrSet.html" target="_self">IpAddrSet</a></td><td class="desc">Set of IPv4 addresses </td></tr>
@@ -188,7 +210,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr id="row_1_12_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classnetkit_1_1Subnet.html" target="_self">Subnet</a></td><td class="desc">IPv4 subnet </td></tr>
 <tr id="row_1_13_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classnetkit_1_1UdpClient.html" target="_self">UdpClient</a></td><td class="desc">Udp socket </td></tr>
 <tr id="row_1_14_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classnetkit_1_1Winsock.html" target="_self">Winsock</a></td><td class="desc"><a class="el" href="classnetkit_1_1Winsock.html" title="winsock API ">Winsock</a> API </td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_2_" class="arrow" onclick="toggleFolder('2_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><b>syskit</b></td><td class="desc"></td></tr>
+<tr id="row_2_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_2_" class="arrow" onclick="toggleFolder('2_')">&#9658;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="namespacesyskit.html" target="_self">syskit</a></td><td class="desc"></td></tr>
 <tr id="row_2_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classsyskit_1_1Atomic32.html" target="_self">Atomic32</a></td><td class="desc">Atomic 32-bit number </td></tr>
 <tr id="row_2_1_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classsyskit_1_1Atomic64.html" target="_self">Atomic64</a></td><td class="desc">Atomic 64-bit number </td></tr>
 <tr id="row_2_2_" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_2_2_" class="arrow" onclick="toggleFolder('2_2_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classsyskit_1_1BitVec32.html" target="_self">BitVec32</a></td><td class="desc">Vector of bits </td></tr>
@@ -291,11 +313,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:57 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Wed Aug 6 2014 08:16:00 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

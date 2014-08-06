@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,12 +70,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('App_8cpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,11 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">App.cpp</div>  </div>
@@ -166,7 +184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (instance_ == 0)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        Singleton::create_t createFunc = (create == 0)? createApp: create;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        Singleton::create_t createFunc = (create == 0)? <a class="code" href="namespaceappkit.html#a27a3ed559f2c11090de85776b3d00acd">createApp</a>: create;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        instance_ = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classappkit_1_1App.html">App</a>*<span class="keyword">&gt;</span>(getSingleton(ID1, createFunc, initialRefCount, createArg));</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
@@ -310,7 +328,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">bool</span> beautify = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    confDir_ = <span class="keyword">new</span> String(confPath.fullName(beautify));</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    mkdir(*confDir_);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="namespacesyskit.html#a06b4924102d64669686e3311c8e14d8a">mkdir</a>(*confDir_);</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    path = logDir;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    confPath.<a class="code" href="classappkit_1_1Path.html#a4cf2b6af2c965303c087a1189991f69d">reset</a>(path, skipNormalization);</div>
@@ -321,7 +339,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        confPath.<a class="code" href="classappkit_1_1String.html#af2631345ffa221e7e6e7a9bd68c161a0">reset</a>(path, skipNormalization);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    logDir_ = <span class="keyword">new</span> String(confPath.fullName(beautify));</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    mkdir(*logDir_);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <a class="code" href="namespacesyskit.html#a06b4924102d64669686e3311c8e14d8a">mkdir</a>(*logDir_);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
@@ -416,6 +434,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classsyskit_1_1Singleton_html"><div class="ttname"><a href="classsyskit_1_1Singleton.html">syskit::Singleton</a></div><div class="ttdoc">per-process singleton </div><div class="ttdef"><b>Definition:</b> <a href="Singleton_8hpp_source.html#l00015">Singleton.hpp:15</a></div></div>
 <div class="ttc" id="classsyskit_1_1Foundation_html_afe8e4a81fecdaaf65ceba7b8a708c1fe"><div class="ttname"><a href="classsyskit_1_1Foundation.html#afe8e4a81fecdaaf65ceba7b8a708c1fe">syskit::Foundation::isOk</a></div><div class="ttdeci">bool isOk() const </div><div class="ttdoc">Return true if foundation was successfully constructed. </div><div class="ttdef"><b>Definition:</b> <a href="Foundation_8hpp_source.html#l00076">Foundation.hpp:76</a></div></div>
 <div class="ttc" id="classappkit_1_1Path_html"><div class="ttname"><a href="classappkit_1_1Path.html">appkit::Path</a></div><div class="ttdoc">normalized file path </div><div class="ttdef"><b>Definition:</b> <a href="Path_8hpp_source.html#l00015">Path.hpp:15</a></div></div>
+<div class="ttc" id="namespacesyskit_html_a06b4924102d64669686e3311c8e14d8a"><div class="ttname"><a href="namespacesyskit.html#a06b4924102d64669686e3311c8e14d8a">syskit::mkdir</a></div><div class="ttdeci">bool mkdir(const wchar_t *path)</div><div class="ttdef"><b>Definition:</b> <a href="sys-linux_8cpp_source.html#l00016">sys-linux.cpp:16</a></div></div>
 <div class="ttc" id="classappkit_1_1String_html_a3e51ccc0af5a021234a7eae9e879cd1a"><div class="ttname"><a href="classappkit_1_1String.html#a3e51ccc0af5a021234a7eae9e879cd1a">appkit::String::widen</a></div><div class="ttdeci">W widen() const </div><div class="ttdef"><b>Definition:</b> <a href="String-linux_8cpp_source.html#l00053">String-linux.cpp:53</a></div></div>
 <div class="ttc" id="classappkit_1_1Path_html_affc30acc38bab8c034d786ba5a8cf5c3"><div class="ttname"><a href="classappkit_1_1Path.html#affc30acc38bab8c034d786ba5a8cf5c3">appkit::Path::asString</a></div><div class="ttdeci">const String &amp; asString() const </div><div class="ttdef"><b>Definition:</b> <a href="Path_8hpp_source.html#l00106">Path.hpp:106</a></div></div>
 <div class="ttc" id="classappkit_1_1Path_html_a4cf2b6af2c965303c087a1189991f69d"><div class="ttname"><a href="classappkit_1_1Path.html#a4cf2b6af2c965303c087a1189991f69d">appkit::Path::reset</a></div><div class="ttdeci">void reset(const String &amp;path, bool skipNormalization=false)</div><div class="ttdef"><b>Definition:</b> <a href="Path_8hpp_source.html#l00114">Path.hpp:114</a></div></div>
@@ -425,14 +444,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classappkit_1_1String_1_1W_html_a22145638cf6af29ed9c6c47452c8cb4a"><div class="ttname"><a href="classappkit_1_1String_1_1W.html#a22145638cf6af29ed9c6c47452c8cb4a">appkit::String::W::detachRaw</a></div><div class="ttdeci">wchar_t * detachRaw()</div><div class="ttdef"><b>Definition:</b> <a href="String_8hpp_source.html#l00641">String.hpp:641</a></div></div>
 <div class="ttc" id="classappkit_1_1String_html"><div class="ttname"><a href="classappkit_1_1String.html">appkit::String</a></div><div class="ttdoc">UTF-capable copy-on-write string. </div><div class="ttdef"><b>Definition:</b> <a href="String_8hpp_source.html#l00023">String.hpp:23</a></div></div>
 <div class="ttc" id="classappkit_1_1Path_html_a9446f525e34fcf2e4a58137d69933f0c"><div class="ttname"><a href="classappkit_1_1Path.html#a9446f525e34fcf2e4a58137d69933f0c">appkit::Path::fullName</a></div><div class="ttdeci">String fullName(bool beautify=true) const </div><div class="ttdef"><b>Definition:</b> <a href="Path_8cpp_source.html#l00163">Path.cpp:163</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a27a3ed559f2c11090de85776b3d00acd"><div class="ttname"><a href="namespaceappkit.html#a27a3ed559f2c11090de85776b3d00acd">appkit::createApp</a></div><div class="ttdeci">Singleton * createApp(const char *, unsigned int initialRefCount, void *)</div><div class="ttdef"><b>Definition:</b> <a href="App-1_8cpp_source.html#l00020">App-1.cpp:20</a></div></div>
 <div class="ttc" id="classsyskit_1_1Foundation_html_a94ed892cb5b6d72ff19726ffad843d7b"><div class="ttname"><a href="classsyskit_1_1Foundation.html#a94ed892cb5b6d72ff19726ffad843d7b">syskit::Foundation::instance</a></div><div class="ttdeci">static const Foundation &amp; instance()</div><div class="ttdef"><b>Definition:</b> <a href="Foundation_8cpp_source.html#l00132">Foundation.cpp:132</a></div></div>
 <div class="ttc" id="classappkit_1_1Path_html_a9d4d73ac18a2a7a35fcbf3224a6c5ada"><div class="ttname"><a href="classappkit_1_1Path.html#a9d4d73ac18a2a7a35fcbf3224a6c5ada">appkit::Path::dirname</a></div><div class="ttdeci">String dirname() const </div><div class="ttdef"><b>Definition:</b> <a href="Path_8cpp_source.html#l00125">Path.cpp:125</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:50 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li><li class="navelem"><b>App.cpp</b></li>
+    <li class="footer">Generated on Wed Aug 6 2014 08:15:53 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

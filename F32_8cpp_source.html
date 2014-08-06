@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,12 +70,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('F32_8cpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,11 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">F32.cpp</div>  </div>
@@ -177,7 +195,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classappkit_1_1F32.html#ab714fc68d93f58368dc74c27209240b2">   89</a></span>&#160;<span class="comment"></span><a class="code" href="classappkit_1_1String.html">String</a> F32::toString()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classappkit_1_1String.html">String</a> s;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    sprintf(s, <span class="stringliteral">&quot;%.6g&quot;</span>, v_);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">sprintf</a>(s, <span class="stringliteral">&quot;%.6g&quot;</span>, v_);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> s;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
@@ -675,6 +693,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;END_NAMESPACE1</div>
 <div class="ttc" id="classappkit_1_1String_html_a23228d441d5dd7a386ac236ec1723c42"><div class="ttname"><a href="classappkit_1_1String.html#a23228d441d5dd7a386ac236ec1723c42">appkit::String::isAscii</a></div><div class="ttdeci">bool isAscii() const </div><div class="ttdoc">Return true if this is a 7-bit ASCII string. </div><div class="ttdef"><b>Definition:</b> <a href="String_8hpp_source.html#l00409">String.hpp:409</a></div></div>
 <div class="ttc" id="crt_8hpp_html"><div class="ttname"><a href="crt_8hpp.html">crt.hpp</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a4ad8f90e612748f3870978e79c236efe"><div class="ttname"><a href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">appkit::sprintf</a></div><div class="ttdeci">int sprintf(String &amp;buf, const char *format,...) GCC_ATTR((format(printf</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00117">crt-linux.cpp:117</a></div></div>
 <div class="ttc" id="classappkit_1_1String_html_a982f3379274ea95e1dc36412994318c1"><div class="ttname"><a href="classappkit_1_1String.html#a982f3379274ea95e1dc36412994318c1">appkit::String::length</a></div><div class="ttdeci">unsigned int length() const </div><div class="ttdoc">Return the string length (number of characters) excluding the terminating null. </div><div class="ttdef"><b>Definition:</b> <a href="String_8hpp_source.html#l00447">String.hpp:447</a></div></div>
 <div class="ttc" id="classappkit_1_1String_html_a04781e737d65f1dd9af2d7acbb6f4e50"><div class="ttname"><a href="classappkit_1_1String.html#a04781e737d65f1dd9af2d7acbb6f4e50">appkit::String::ascii</a></div><div class="ttdeci">const char * ascii() const </div><div class="ttdoc">Return the null-terminated ASCII string assuming instance is a 7-bit ASCII string. </div><div class="ttdef"><b>Definition:</b> <a href="String_8hpp_source.html#l00421">String.hpp:421</a></div></div>
 <div class="ttc" id="classappkit_1_1String_html_a9f106d402187e71b3816d62b511dd9bc"><div class="ttname"><a href="classappkit_1_1String.html#a9f106d402187e71b3816d62b511dd9bc">appkit::String::byteSize</a></div><div class="ttdeci">unsigned int byteSize() const </div><div class="ttdoc">Return the string size in bytes including the terminating null. </div><div class="ttdef"><b>Definition:</b> <a href="String_8hpp_source.html#l00441">String.hpp:441</a></div></div>
@@ -688,11 +707,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classappkit_1_1F32_html_ab714fc68d93f58368dc74c27209240b2"><div class="ttname"><a href="classappkit_1_1F32.html#ab714fc68d93f58368dc74c27209240b2">appkit::F32::toString</a></div><div class="ttdeci">String toString() const </div><div class="ttdef"><b>Definition:</b> <a href="F32_8cpp_source.html#l00089">F32.cpp:89</a></div></div>
 <div class="ttc" id="classappkit_1_1String_html_a51e8be78c90d388c5327bb86823e51e4"><div class="ttname"><a href="classappkit_1_1String.html#a51e8be78c90d388c5327bb86823e51e4">appkit::String::substr</a></div><div class="ttdeci">String substr(size_t startAt, size_t charCount=static_cast&lt; size_t &gt;(0)-1) const </div><div class="ttdef"><b>Definition:</b> <a href="String_8cpp_source.html#l00498">String.cpp:498</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:50 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li><li class="navelem"><b>F32.cpp</b></li>
+    <li class="footer">Generated on Wed Aug 6 2014 08:15:53 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

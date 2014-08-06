@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,12 +70,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Trie_8cpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,11 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_351abf213761a1269475f1df2ceaa54c.html">syskit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Trie.cpp</div>  </div>
@@ -1938,7 +1956,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* p = k + 1;</div>
 <div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;    <span class="keywordflow">for</span> (; s &lt; sEnd; ++s, ++p)</div>
 <div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;    {</div>
-<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;        *s = syskit::XDIGIT[*p];</div>
+<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;        *s = <a class="code" href="namespacesyskit.html#ae8fbd1571abc66fea9ee2d95a1ed7cb7">syskit::XDIGIT</a>[*p];</div>
 <div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;    }</div>
 <div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;    *s = 0;</div>
 <div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;    <span class="keywordflow">return</span> key;</div>
@@ -1956,7 +1974,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* p = k + 1;</div>
 <div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;    <span class="keywordflow">for</span> (; s &lt; sEnd; ++s, ++p)</div>
 <div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;    {</div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;        *s = syskit::xdigit[*p];</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;        *s = <a class="code" href="namespacesyskit.html#afbf2f1d0155ca0f6cf2b125b4281159b">syskit::xdigit</a>[*p];</div>
 <div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;    }</div>
 <div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;    *s = 0;</div>
 <div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;    <span class="keywordflow">return</span> key;</div>
@@ -2005,7 +2023,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* p = k + n;</div>
 <div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;    <span class="keywordflow">for</span> (; p &gt; k; --p, --s)</div>
 <div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;    {</div>
-<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;        *p = syskit::NIBBLE[*s - <span class="charliteral">&#39;0&#39;</span>];</div>
+<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;        *p = <a class="code" href="namespacesyskit.html#a02c0b412630ee7502e32a65f0d48c0e2">syskit::NIBBLE</a>[*s - <span class="charliteral">&#39;0&#39;</span>];</div>
 <div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;    }</div>
 <div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;    *p = n;</div>
 <div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;    <span class="keywordflow">return</span> k;</div>
@@ -2212,6 +2230,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02124"></a><span class="lineno"> 2124</span>&#160;</div>
 <div class="line"><a name="l02125"></a><span class="lineno"> 2125</span>&#160;END_NAMESPACE1</div>
 <div class="ttc" id="classsyskit_1_1Trie_1_1U56Key_html_adccc98f6d9be805be28734b612edf5f3"><div class="ttname"><a href="classsyskit_1_1Trie_1_1U56Key.html#adccc98f6d9be805be28734b612edf5f3">syskit::Trie::U56Key::encode</a></div><div class="ttdeci">static unsigned char * encode(unsigned char k[1+7], unsigned long long key)</div><div class="ttdef"><b>Definition:</b> <a href="Trie_8cpp_source.html#l02063">Trie.cpp:2063</a></div></div>
+<div class="ttc" id="namespacesyskit_html_a02c0b412630ee7502e32a65f0d48c0e2"><div class="ttname"><a href="namespacesyskit.html#a02c0b412630ee7502e32a65f0d48c0e2">syskit::NIBBLE</a></div><div class="ttdeci">const unsigned char NIBBLE[]</div><div class="ttdef"><b>Definition:</b> <a href="sys_8cpp_source.html#l00047">sys.cpp:47</a></div></div>
+<div class="ttc" id="namespacesyskit_html_afbf2f1d0155ca0f6cf2b125b4281159b"><div class="ttname"><a href="namespacesyskit.html#afbf2f1d0155ca0f6cf2b125b4281159b">syskit::xdigit</a></div><div class="ttdeci">const char xdigit[]</div><div class="ttdef"><b>Definition:</b> <a href="sys_8cpp_source.html#l00019">sys.cpp:19</a></div></div>
 <div class="ttc" id="classsyskit_1_1Trie_1_1U64Key_html_a76a0e740ca0eb45575da465eb01eb4a2"><div class="ttname"><a href="classsyskit_1_1Trie_1_1U64Key.html#a76a0e740ca0eb45575da465eb01eb4a2">syskit::Trie::U64Key::decode</a></div><div class="ttdeci">static unsigned long long decode(const unsigned char *k)</div><div class="ttdef"><b>Definition:</b> <a href="Trie_8cpp_source.html#l02112">Trie.cpp:2112</a></div></div>
 <div class="ttc" id="classsyskit_1_1Trie_1_1StrKey_html_a88416233453c9ceaffc874d99e878b16"><div class="ttname"><a href="classsyskit_1_1Trie_1_1StrKey.html#a88416233453c9ceaffc874d99e878b16">syskit::Trie::StrKey::reset</a></div><div class="ttdeci">void reset(type_e type=Ascii, const char *key=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="Trie_8cpp_source.html#l01932">Trie.cpp:1932</a></div></div>
 <div class="ttc" id="classsyskit_1_1Trie_html_affc52a9de16aa9bfd71a0db10310f8b5"><div class="ttname"><a href="classsyskit_1_1Trie.html#affc52a9de16aa9bfd71a0db10310f8b5">syskit::Trie::maxDigit</a></div><div class="ttdeci">unsigned char maxDigit() const </div><div class="ttdef"><b>Definition:</b> <a href="Trie_8hpp_source.html#l00567">Trie.hpp:567</a></div></div>
@@ -2223,6 +2243,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classsyskit_1_1Trie_1_1Node_html"><div class="ttname"><a href="classsyskit_1_1Trie_1_1Node.html">syskit::Trie::Node</a></div><div class="ttdef"><b>Definition:</b> <a href="Trie_8hpp_source.html#l00097">Trie.hpp:97</a></div></div>
 <div class="ttc" id="classsyskit_1_1Trie_1_1U28Key_html_a8fbb2e2a4b911a5a0565d31289426e01"><div class="ttname"><a href="classsyskit_1_1Trie_1_1U28Key.html#a8fbb2e2a4b911a5a0565d31289426e01">syskit::Trie::U28Key::encode</a></div><div class="ttdeci">static unsigned char * encode(unsigned char k[1+7], unsigned int key)</div><div class="ttdef"><b>Definition:</b> <a href="Trie_8cpp_source.html#l01996">Trie.cpp:1996</a></div></div>
 <div class="ttc" id="classsyskit_1_1Trie_1_1U64Key_html_aa30e9fff41f7dbe23ec45146a79d9450"><div class="ttname"><a href="classsyskit_1_1Trie_1_1U64Key.html#aa30e9fff41f7dbe23ec45146a79d9450">syskit::Trie::U64Key::encode</a></div><div class="ttdeci">static unsigned char * encode(unsigned char k[1+8], unsigned long long key)</div><div class="ttdef"><b>Definition:</b> <a href="Trie_8cpp_source.html#l02096">Trie.cpp:2096</a></div></div>
+<div class="ttc" id="namespacesyskit_html_ae8fbd1571abc66fea9ee2d95a1ed7cb7"><div class="ttname"><a href="namespacesyskit.html#ae8fbd1571abc66fea9ee2d95a1ed7cb7">syskit::XDIGIT</a></div><div class="ttdeci">const char XDIGIT[]</div><div class="ttdef"><b>Definition:</b> <a href="sys_8cpp_source.html#l00012">sys.cpp:12</a></div></div>
 <div class="ttc" id="classsyskit_1_1Trie_1_1U32Key_html_af4129c0f62b8e9bb7d0ac8a199af2fef"><div class="ttname"><a href="classsyskit_1_1Trie_1_1U32Key.html#af4129c0f62b8e9bb7d0ac8a199af2fef">syskit::Trie::U32Key::decode</a></div><div class="ttdeci">static unsigned int decode(const unsigned char *k)</div><div class="ttdef"><b>Definition:</b> <a href="Trie_8cpp_source.html#l02045">Trie.cpp:2045</a></div></div>
 <div class="ttc" id="classsyskit_1_1Trie_html"><div class="ttname"><a href="classsyskit_1_1Trie.html">syskit::Trie</a></div><div class="ttdoc">digit trie </div><div class="ttdef"><b>Definition:</b> <a href="Trie_8hpp_source.html#l00018">Trie.hpp:18</a></div></div>
 <div class="ttc" id="classsyskit_1_1Trie_html_a375cc68af4e23698c55b218387f62822"><div class="ttname"><a href="classsyskit_1_1Trie.html#a375cc68af4e23698c55b218387f62822">syskit::Trie::find</a></div><div class="ttdeci">bool find(const unsigned char *k) const </div><div class="ttdoc">Locate given key. Return true if found. Return false otherwise. </div><div class="ttdef"><b>Definition:</b> <a href="Trie_8hpp_source.html#l00541">Trie.hpp:541</a></div></div>
@@ -2230,11 +2251,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classsyskit_1_1Trie_1_1U16Key_html_a081189f318a5a13d9075fde53387beee"><div class="ttname"><a href="classsyskit_1_1Trie_1_1U16Key.html#a081189f318a5a13d9075fde53387beee">syskit::Trie::U16Key::encode</a></div><div class="ttdeci">static unsigned char * encode(unsigned char k[1+4], unsigned short key)</div><div class="ttdef"><b>Definition:</b> <a href="Trie_8cpp_source.html#l01966">Trie.cpp:1966</a></div></div>
 <div class="ttc" id="classsyskit_1_1Trie_1_1U56Key_html_a79a7417bba4580f159530322a239f900"><div class="ttname"><a href="classsyskit_1_1Trie_1_1U56Key.html#a79a7417bba4580f159530322a239f900">syskit::Trie::U56Key::decode</a></div><div class="ttdeci">static unsigned long long decode(const unsigned char *k)</div><div class="ttdef"><b>Definition:</b> <a href="Trie_8cpp_source.html#l02079">Trie.cpp:2079</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:53 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_351abf213761a1269475f1df2ceaa54c.html">syskit</a></li><li class="navelem"><b>Trie.cpp</b></li>
+    <li class="footer">Generated on Wed Aug 6 2014 08:15:56 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

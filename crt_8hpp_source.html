@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,12 +70,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('crt_8hpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,11 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">crt.hpp</div>  </div>
@@ -89,12 +107,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="crt_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Software by Thanh Phung -- thanhtphung@yahoo.com.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * No copyrights. No warranties. No restrictions in reuse.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef APPKIT_CRT_HPP</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define APPKIT_CRT_HPP</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//! \file crt.hpp</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> */</span><span class="comment"></span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//! @file crt.hpp</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//! @namespace appkit</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef APPKIT_CRT_HPP</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define APPKIT_CRT_HPP</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;cstdio&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sys_8hpp.html">syskit/sys.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
@@ -105,22 +123,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;class String;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">bool</span> getenv(const String&amp; k, String&amp; v, <span class="keywordtype">bool</span> expandEnv = false);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">bool</span> getline(String&amp; line, <span class="keywordtype">size_t</span> maxLength = 4095, <span class="keywordtype">bool</span> doTrimLine = true, <span class="keywordtype">bool</span> doEchoInput = true);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">bool</span> putenv(const String&amp; k, const String* v);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> access(const String&amp; path, <span class="keywordtype">int</span> mode);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> chdir(const String&amp; path);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">int</span> chmod(const String&amp; path, <span class="keywordtype">int</span> mode);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">int</span> copy(const String&amp; srcPath, const String&amp; dstPath, <span class="keywordtype">bool</span> failIfExists = true);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> link(const String&amp; oldPath, const String&amp; newPath);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">int</span> mkdir(const String&amp; path);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">int</span> mkdirRecursively(const String&amp; path, <span class="keywordtype">bool</span> skipNormalization = false);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">int</span> rename(const String&amp; oldPath, const String&amp; newPath);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">int</span> rmdir(const String&amp; path);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">int</span> sprintf(String&amp; buf, const <span class="keywordtype">char</span>* format, ...) GCC_ATTR((format(printf, 2, 3)));</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> swprintf(String&amp; buf, const <span class="keywordtype">wchar_t</span>* format, ...);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">int</span> unlink(const String&amp; path);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;std::FILE* fopen(const String&amp; path, const String&amp; mode);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespaceappkit.html#a1f6926dc222ccb1fd6bec10780a385bd">getenv</a>(const String&amp; k, String&amp; v, <span class="keywordtype">bool</span> expandEnv = false);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespaceappkit.html#a7863929b298f6cd18242272f5f0e9a0f">getline</a>(String&amp; line, <span class="keywordtype">size_t</span> maxLength = 4095, <span class="keywordtype">bool</span> doTrimLine = true, <span class="keywordtype">bool</span> doEchoInput = true);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespaceappkit.html#a58684cc85ff98f9c22a93d3ed69b71c5">putenv</a>(const String&amp; k, const String* v);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#a5491c6c05c84e0e46e7c5969c75f8459">access</a>(const String&amp; path, <span class="keywordtype">int</span> mode);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#a3a7c9a426db9476bbc98c9d95e0d7074">chdir</a>(const String&amp; path);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#aec49d6c55da60021a9e25396df4b1444">chmod</a>(const String&amp; path, <span class="keywordtype">int</span> mode);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#ab0085fbb44ff507335cd5e17d9cc0c21">copy</a>(const String&amp; srcPath, const String&amp; dstPath, <span class="keywordtype">bool</span> failIfExists = true);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#ac967695afb237c55762e315fbe253efc">link</a>(const String&amp; oldPath, const String&amp; newPath);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#aa9ef3fbd571aa57f17f30d3044699c07">mkdir</a>(const String&amp; path);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#a76caa62914abe6414a97fa8ac1d2bb0f">mkdirRecursively</a>(const String&amp; path, <span class="keywordtype">bool</span> skipNormalization = false);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#a165afdb0c5a728eba28f91e7f418d60a">rename</a>(const String&amp; oldPath, const String&amp; newPath);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#ad060f5d99d8d532872b36accc4edb5a4">rmdir</a>(const String&amp; path);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">sprintf</a>(String&amp; buf, const <span class="keywordtype">char</span>* format, ...) GCC_ATTR((format(printf, 2, 3)));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#a034ce6729a3bd574db50007bf205fe5f">swprintf</a>(String&amp; buf, const <span class="keywordtype">wchar_t</span>* format, ...);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceappkit.html#a7e027889716561de512d148b849f9e88">unlink</a>(const String&amp; path);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;std::FILE* <a class="code" href="namespaceappkit.html#aa28a3190c0cb26c7bad8ff3df8f3c6af">fopen</a>(const String&amp; path, const String&amp; mode);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;END_NAMESPACE1</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
@@ -129,13 +147,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="namespaceappkit_html_a4ad8f90e612748f3870978e79c236efe"><div class="ttname"><a href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">appkit::sprintf</a></div><div class="ttdeci">int sprintf(String &amp;buf, const char *format,...) GCC_ATTR((format(printf</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00117">crt-linux.cpp:117</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a7e027889716561de512d148b849f9e88"><div class="ttname"><a href="namespaceappkit.html#a7e027889716561de512d148b849f9e88">appkit::unlink</a></div><div class="ttdeci">int unlink(const String &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00157">crt-linux.cpp:157</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a58684cc85ff98f9c22a93d3ed69b71c5"><div class="ttname"><a href="namespaceappkit.html#a58684cc85ff98f9c22a93d3ed69b71c5">appkit::putenv</a></div><div class="ttdeci">bool putenv(const String &amp;k, const String *v)</div><div class="ttdef"><b>Definition:</b> <a href="crt-win_8cpp_source.html#l00129">crt-win.cpp:129</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a5491c6c05c84e0e46e7c5969c75f8459"><div class="ttname"><a href="namespaceappkit.html#a5491c6c05c84e0e46e7c5969c75f8459">appkit::access</a></div><div class="ttdeci">int access(const String &amp;path, int mode)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00026">crt-linux.cpp:26</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a1f6926dc222ccb1fd6bec10780a385bd"><div class="ttname"><a href="namespaceappkit.html#a1f6926dc222ccb1fd6bec10780a385bd">appkit::getenv</a></div><div class="ttdeci">bool getenv(const String &amp;k, String &amp;v, bool expandEnv=false)</div><div class="ttdef"><b>Definition:</b> <a href="crt-win_8cpp_source.html#l00066">crt-win.cpp:66</a></div></div>
+<div class="ttc" id="namespaceappkit_html_ac967695afb237c55762e315fbe253efc"><div class="ttname"><a href="namespaceappkit.html#ac967695afb237c55762e315fbe253efc">appkit::link</a></div><div class="ttdeci">int link(const String &amp;oldPath, const String &amp;newPath)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00056">crt-linux.cpp:56</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a7863929b298f6cd18242272f5f0e9a0f"><div class="ttname"><a href="namespaceappkit.html#a7863929b298f6cd18242272f5f0e9a0f">appkit::getline</a></div><div class="ttdeci">bool getline(String &amp;line, size_t maxLength=4095, bool doTrimLine=true, bool doEchoInput=true)</div><div class="ttdef"><b>Definition:</b> <a href="crt-win_8cpp_source.html#l00096">crt-win.cpp:96</a></div></div>
 <div class="ttc" id="sys_8hpp_html"><div class="ttname"><a href="sys_8hpp.html">sys.hpp</a></div></div>
+<div class="ttc" id="namespaceappkit_html_aec49d6c55da60021a9e25396df4b1444"><div class="ttname"><a href="namespaceappkit.html#aec49d6c55da60021a9e25396df4b1444">appkit::chmod</a></div><div class="ttdeci">int chmod(const String &amp;path, int mode)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00046">crt-linux.cpp:46</a></div></div>
+<div class="ttc" id="namespaceappkit_html_aa28a3190c0cb26c7bad8ff3df8f3c6af"><div class="ttname"><a href="namespaceappkit.html#aa28a3190c0cb26c7bad8ff3df8f3c6af">appkit::fopen</a></div><div class="ttdeci">std::FILE * fopen(const String &amp;path, const String &amp;mode)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00167">crt-linux.cpp:167</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a76caa62914abe6414a97fa8ac1d2bb0f"><div class="ttname"><a href="namespaceappkit.html#a76caa62914abe6414a97fa8ac1d2bb0f">appkit::mkdirRecursively</a></div><div class="ttdeci">int mkdirRecursively(const String &amp;path, bool skipNormalization=false)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00077">crt-linux.cpp:77</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a3a7c9a426db9476bbc98c9d95e0d7074"><div class="ttname"><a href="namespaceappkit.html#a3a7c9a426db9476bbc98c9d95e0d7074">appkit::chdir</a></div><div class="ttdeci">int chdir(const String &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00036">crt-linux.cpp:36</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a165afdb0c5a728eba28f91e7f418d60a"><div class="ttname"><a href="namespaceappkit.html#a165afdb0c5a728eba28f91e7f418d60a">appkit::rename</a></div><div class="ttdeci">int rename(const String &amp;oldPath, const String &amp;newPath)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00097">crt-linux.cpp:97</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a034ce6729a3bd574db50007bf205fe5f"><div class="ttname"><a href="namespaceappkit.html#a034ce6729a3bd574db50007bf205fe5f">appkit::swprintf</a></div><div class="ttdeci">int int swprintf(String &amp;buf, const wchar_t *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00137">crt-linux.cpp:137</a></div></div>
+<div class="ttc" id="namespaceappkit_html_aa9ef3fbd571aa57f17f30d3044699c07"><div class="ttname"><a href="namespaceappkit.html#aa9ef3fbd571aa57f17f30d3044699c07">appkit::mkdir</a></div><div class="ttdeci">int mkdir(const String &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00066">crt-linux.cpp:66</a></div></div>
+<div class="ttc" id="namespaceappkit_html_ad060f5d99d8d532872b36accc4edb5a4"><div class="ttname"><a href="namespaceappkit.html#ad060f5d99d8d532872b36accc4edb5a4">appkit::rmdir</a></div><div class="ttdeci">int rmdir(const String &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00107">crt-linux.cpp:107</a></div></div>
+<div class="ttc" id="namespaceappkit_html_ab0085fbb44ff507335cd5e17d9cc0c21"><div class="ttname"><a href="namespaceappkit.html#ab0085fbb44ff507335cd5e17d9cc0c21">appkit::copy</a></div><div class="ttdeci">int copy(const String &amp;srcPath, const String &amp;dstPath, bool failIfExists=true)</div><div class="ttdef"><b>Definition:</b> <a href="crt-win_8cpp_source.html#l00236">crt-win.cpp:236</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:50 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li><li class="navelem"><a class="el" href="crt_8hpp.html">crt.hpp</a></li>
+    <li class="footer">Generated on Wed Aug 6 2014 08:15:53 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

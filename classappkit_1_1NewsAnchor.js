@@ -1,0 +1,27 @@
+var classappkit_1_1NewsAnchor =
+[
+    [ "cb0_t", "classappkit_1_1NewsAnchor.html#a58e250c61a76a789613503c5370794f8", null ],
+    [ "cb1_t", "classappkit_1_1NewsAnchor.html#a00546ddd7fbe0f380037b28743213a7d", null ],
+    [ "LogHeadlines", "classappkit_1_1NewsAnchor.html#ab772738065e82d4bdeca9dfab82755a4a967651edfa8f2d815876a22f0235f85b", null ],
+    [ "FlushLogEntries", "classappkit_1_1NewsAnchor.html#ab772738065e82d4bdeca9dfab82755a4a466545ceda7a8c25fcb31c818ed28020", null ],
+    [ "NewsAnchor", "classappkit_1_1NewsAnchor.html#a3d046c7060c24345cb7c2bc699868bd9", null ],
+    [ "~NewsAnchor", "classappkit_1_1NewsAnchor.html#a3be5ae944194230d2279ea159cd01df8", null ],
+    [ "addSource", "classappkit_1_1NewsAnchor.html#a72f00db7b3204c017b3a9819a789db66", null ],
+    [ "apply", "classappkit_1_1NewsAnchor.html#add937668e84397874a135b3521cbc4d4", null ],
+    [ "apply", "classappkit_1_1NewsAnchor.html#ab86fe99a09cd51842d1013bfff84f687", null ],
+    [ "cmdNews", "classappkit_1_1NewsAnchor.html#a86ab987739785d13a3b8b996cb759534", null ],
+    [ "findSourceByName", "classappkit_1_1NewsAnchor.html#aa219cbff4b3fd982e10fe4e7c8eeb9dd", null ],
+    [ "headlineLoggingIsEnabled", "classappkit_1_1NewsAnchor.html#aa13d4f091ae38d2267b146e8f37817b1", null ],
+    [ "logPathHi", "classappkit_1_1NewsAnchor.html#a44ce8a0f5a82ae68c0d748472b19a497", null ],
+    [ "logPathLo", "classappkit_1_1NewsAnchor.html#a88ce77eaed0bb4819fbb6329b52e2642", null ],
+    [ "maxSourceNameLength", "classappkit_1_1NewsAnchor.html#a9133826fb023c740373e53e68a36ae84", null ],
+    [ "observe", "classappkit_1_1NewsAnchor.html#a81538e11eb892307b513197c1913de62", null ],
+    [ "rmSource", "classappkit_1_1NewsAnchor.html#abd12d511fdbe8f27958f281a50ad4367", null ],
+    [ "setLogMode", "classappkit_1_1NewsAnchor.html#ab90d320e43527aade59856d1256e90c2", null ],
+    [ "sourceNews", "classappkit_1_1NewsAnchor.html#a72e512f2cb792ec215d52a8e1e92e79b", null ],
+    [ "sourceNews", "classappkit_1_1NewsAnchor.html#afdf85571248dd6354af1f34dd88ee9df", null ],
+    [ "threadId", "classappkit_1_1NewsAnchor.html#aa5c926ff8e2a8a4d5dc2742efabf13ba", null ],
+    [ "toBeAiredQ", "classappkit_1_1NewsAnchor.html#a37d296309d7f8a9c6f0cbd63307e9349", null ],
+    [ "toBeAiredQ", "classappkit_1_1NewsAnchor.html#a6c16db5b931315a33da30d64199e1d9a", null ],
+    [ "waitTilFlushed", "classappkit_1_1NewsAnchor.html#a192855b1e888960b8cea06f885314491", null ]
+];

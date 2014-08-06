@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,12 +70,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Utf8Seq_8cpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,11 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_351abf213761a1269475f1df2ceaa54c.html">syskit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Utf8Seq.cpp</div>  </div>
@@ -705,12 +723,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    utf8_t* p8 = seq_;</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="classsyskit_1_1Utf8.html">Utf8</a> c; p61 &lt; p61End; p8 += c.<a class="code" href="classsyskit_1_1Utf8.html#afd6b85cc955192274bdebe8b2625330b">encode</a>(p8))</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    {</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> u16A = bswap16(*p61);</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> u16A = <a class="code" href="namespacesyskit.html#a966ea4dbb73199e8afdeeb436c470a09">bswap16</a>(*p61);</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        <span class="keywordflow">if</span> ((u16A &gt;= Utf16::HiHalfMin) &amp;&amp; (u16A &lt;= Utf16::LoHalfMax))</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        {</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            <span class="keywordflow">if</span> ((p61 + 1 &lt; p61End) &amp;&amp; (u16A &lt;= Utf16::HiHalfMax))</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            {</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> u16B = bswap16(p61[1]);</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> u16B = <a class="code" href="namespacesyskit.html#a966ea4dbb73199e8afdeeb436c470a09">bswap16</a>(p61[1]);</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                <span class="keywordflow">if</span> ((u16B &gt;= Utf16::LoHalfMin) &amp;&amp; (u16B &lt;= Utf16::LoHalfMax))</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                {</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                    utf32_t value = <a class="code" href="classsyskit_1_1Utf16.html#ae9c854fafec9d2762e7a6a7edd3fce94">Utf16::convertSurrogate</a>(u16A, u16B);</div>
@@ -1689,6 +1707,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classsyskit_1_1Utf8Seq_html_a7a6fa721c7ee015de40bb28e3f3edefa"><div class="ttname"><a href="classsyskit_1_1Utf8Seq.html#a7a6fa721c7ee015de40bb28e3f3edefa">syskit::Utf8Seq::truncate</a></div><div class="ttdeci">bool truncate(size_t numChars)</div><div class="ttdef"><b>Definition:</b> <a href="Utf8Seq_8cpp_source.html#l00418">Utf8Seq.cpp:418</a></div></div>
 <div class="ttc" id="classsyskit_1_1Utf8Seq_1_1Itor_html_a422bc32342bdd67e8768873502054063"><div class="ttname"><a href="classsyskit_1_1Utf8Seq_1_1Itor.html#a422bc32342bdd67e8768873502054063">syskit::Utf8Seq::Itor::peekRight</a></div><div class="ttdeci">bool peekRight(utf32_t &amp;c) const </div><div class="ttdef"><b>Definition:</b> <a href="Utf8Seq_8cpp_source.html#l01462">Utf8Seq.cpp:1462</a></div></div>
 <div class="ttc" id="classsyskit_1_1Utf8Seq_html_ad52f135ba5547c929003a4f5c085941e"><div class="ttname"><a href="classsyskit_1_1Utf8Seq.html#ad52f135ba5547c929003a4f5c085941e">syskit::Utf8Seq::getByteSizes</a></div><div class="ttdeci">void getByteSizes(size_t startAt, size_t charCount, unsigned int &amp;size0, unsigned int &amp;size1) const </div><div class="ttdef"><b>Definition:</b> <a href="Utf8Seq_8cpp_source.html#l01042">Utf8Seq.cpp:1042</a></div></div>
+<div class="ttc" id="namespacesyskit_html_a966ea4dbb73199e8afdeeb436c470a09"><div class="ttname"><a href="namespacesyskit.html#a966ea4dbb73199e8afdeeb436c470a09">syskit::bswap16</a></div><div class="ttdeci">unsigned short bswap16(unsigned short u16)</div><div class="ttdef"><b>Definition:</b> <a href="sys-linux_8hpp_source.html#l00132">sys-linux.hpp:132</a></div></div>
 <div class="ttc" id="classsyskit_1_1UtfSeq_html_a47ef8ee3f0de2241a11ab0b70dfed7f4"><div class="ttname"><a href="classsyskit_1_1UtfSeq.html#a47ef8ee3f0de2241a11ab0b70dfed7f4">syskit::UtfSeq::numChars</a></div><div class="ttdeci">unsigned int numChars() const </div><div class="ttdoc">Return the number of UTFx characters held in the sequence. </div><div class="ttdef"><b>Definition:</b> <a href="UtfSeq_8hpp_source.html#l00084">UtfSeq.hpp:84</a></div></div>
 <div class="ttc" id="classsyskit_1_1Utf8Seq_html_aa51efec905ee47b042a1948681c613e0"><div class="ttname"><a href="classsyskit_1_1Utf8Seq.html#aa51efec905ee47b042a1948681c613e0">syskit::Utf8Seq::seek</a></div><div class="ttdeci">const utf8_t * seek(size_t index) const </div><div class="ttdef"><b>Definition:</b> <a href="Utf8Seq_8cpp_source.html#l00454">Utf8Seq.cpp:454</a></div></div>
 <div class="ttc" id="classsyskit_1_1Utf8_html_ad9eaed1b6c31f2c9ecfa6b7979263e58"><div class="ttname"><a href="classsyskit_1_1Utf8.html#ad9eaed1b6c31f2c9ecfa6b7979263e58">syskit::Utf8::isValid</a></div><div class="ttdeci">static bool isValid(const utf8_t seq[MaxSeqLength])</div><div class="ttdef"><b>Definition:</b> <a href="Utf8_8hpp_source.html#l00168">Utf8.hpp:168</a></div></div>
@@ -1716,11 +1735,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classsyskit_1_1Utf8Seq_1_1Itor_html_a5acf685d6fd2019ed7861d64aee13001"><div class="ttname"><a href="classsyskit_1_1Utf8Seq_1_1Itor.html#a5acf685d6fd2019ed7861d64aee13001">syskit::Utf8Seq::Itor::next</a></div><div class="ttdeci">bool next(utf32_t &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="Utf8Seq_8cpp_source.html#l01369">Utf8Seq.cpp:1369</a></div></div>
 <div class="ttc" id="classsyskit_1_1Growable_html_a36f582ad79a5b19ad2b916e3b6cabe1e"><div class="ttname"><a href="classsyskit_1_1Growable.html#a36f582ad79a5b19ad2b916e3b6cabe1e">syskit::Growable::setNextCap</a></div><div class="ttdeci">unsigned int setNextCap(unsigned int minCap)</div><div class="ttdef"><b>Definition:</b> <a href="Growable_8hpp_source.html#l00123">Growable.hpp:123</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:53 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_351abf213761a1269475f1df2ceaa54c.html">syskit</a></li><li class="navelem"><b>Utf8Seq.cpp</b></li>
+    <li class="footer">Generated on Wed Aug 6 2014 08:15:56 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

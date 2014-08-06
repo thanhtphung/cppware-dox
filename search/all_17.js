@@ -1,15 +1,21 @@
 var searchData=
 [
-  ['xdigitstou8',['xdigitsToU8',['../classappkit_1_1U8.html#a7054fc14f6de49ca9ce587e5e9a5ebc9',1,'appkit::U8']]],
-  ['xdigittonibble',['xdigitToNibble',['../classappkit_1_1U8.html#a16dc37ca9e6b961cb788961ec2c327b6',1,'appkit::U8']]],
-  ['xmldoc',['XmlDoc',['../classappkit_1_1XmlDoc.html',1,'appkit']]],
-  ['xmldoc',['XmlDoc',['../classappkit_1_1XmlDoc.html#a843dabbb676fffad55f372c9f57347ad',1,'appkit::XmlDoc::XmlDoc(XmlProlog *prolog=0, XmlElement *root=0)'],['../classappkit_1_1XmlDoc.html#ae7334f6d7f472ea776a41cde4a3eb075',1,'appkit::XmlDoc::XmlDoc(const String &amp;path)'],['../classappkit_1_1XmlDoc.html#a165a49a8751e7b22adb4058577e41dc0',1,'appkit::XmlDoc::XmlDoc(const char *path)'],['../classappkit_1_1XmlDoc.html#a50e1bf325ed127a4aae70a20c630a5ad',1,'appkit::XmlDoc::XmlDoc(const std::istream &amp;is)']]],
-  ['xmlelement',['XmlElement',['../classappkit_1_1XmlElement.html#ada70dea32a1b1c2cb8c436d1d0c489ff',1,'appkit::XmlElement::XmlElement(const String &amp;name, unsigned int attrCap=0, unsigned int kidCap=0)'],['../classappkit_1_1XmlElement.html#aac22e79d65808c32d111db231a435814',1,'appkit::XmlElement::XmlElement()']]],
-  ['xmlelement',['XmlElement',['../classappkit_1_1XmlElement.html',1,'appkit']]],
-  ['xmllexer',['XmlLexer',['../classappkit_1_1XmlLexer.html#a30ba974fec5cd99da159c5c7fe0fe150',1,'appkit::XmlLexer::XmlLexer(const String &amp;lexee)'],['../classappkit_1_1XmlLexer.html#acf18160ca234cad5b49eb458c9011e1d',1,'appkit::XmlLexer::XmlLexer(const std::istream &amp;lexee)'],['../classappkit_1_1XmlLexer.html#ab016a250652c6a1bdd8c8ba0378f057f',1,'appkit::XmlLexer::XmlLexer(const syskit::utf8_t *lexee, size_t byteSize)']]],
-  ['xmllexer',['XmlLexer',['../classappkit_1_1XmlLexer.html',1,'appkit']]],
-  ['xmlprolog',['XmlProlog',['../classappkit_1_1XmlProlog.html',1,'appkit']]],
-  ['xmlprolog',['XmlProlog',['../classappkit_1_1XmlProlog.html#a90b800ea9a7979123f653f0c6228a3ec',1,'appkit::XmlProlog::XmlProlog()'],['../classappkit_1_1XmlProlog.html#a5176fe9bc67f0f321bc629a4b3e96349',1,'appkit::XmlProlog::XmlProlog(const String &amp;version, const String &amp;encoding, const String &amp;standalone)']]],
-  ['xname',['xName',['../classappkit_1_1BufPoolCmd.html#ab3009d48989d144580c4adfc5ffe35dc',1,'appkit::BufPoolCmd::xName()'],['../classappkit_1_1Cmd.html#a4ded3f1c7b092199719f4cec5fb38ffc',1,'appkit::Cmd::xName()'],['../classappkit_1_1CmdCmd.html#a05debf8ac3fb22dea09c13252748d33b',1,'appkit::CmdCmd::xName()'],['../classappkit_1_1MiscDbugCmd.html#a99278d3aeef19f84d7427628c41ec859',1,'appkit::MiscDbugCmd::xName()'],['../classappkit_1_1NetDemonCmd.html#a980a64485df7ee1ba94e5921c9c12ce9',1,'appkit::NetDemonCmd::xName()'],['../classappkit_1_1NewsCmd.html#a8cf9dfc9f6c06ac66c1bd61a4c6f710d',1,'appkit::NewsCmd::xName()'],['../classappkit_1_1WinAppCmd.html#a7e799fd0f6e8e9e1bb503ca1d6920123',1,'appkit::WinAppCmd::xName()']]],
-  ['xusage',['xUsage',['../classappkit_1_1App.html#ac75cc76d4b0cb8a48a1880d052acbcb5',1,'appkit::App::xUsage()'],['../classappkit_1_1Cmd.html#abdea2de94339498f664df644fe4ead8d',1,'appkit::Cmd::xUsage()'],['../classappkit_1_1CmdCmd.html#a22b0361941756f28e6004a27d17bb307',1,'appkit::CmdCmd::xUsage()'],['../classappkit_1_1Demon.html#a8f82644f707716e700fb652dec7a3dd8',1,'appkit::Demon::xUsage()'],['../classappkit_1_1MiscDbugCmd.html#ae1cd4a14ffff831861a137d3e2e4c28e',1,'appkit::MiscDbugCmd::xUsage()'],['../classappkit_1_1NetDemon.html#ae6950b9fa6e5539e8d6029a93a252b85',1,'appkit::NetDemon::xUsage()'],['../classappkit_1_1WinApp.html#aa388d37db58164f53286cfdf8cd896dc',1,'appkit::WinApp::xUsage()']]]
+  ['w',['W',['../classappkit_1_1String_1_1W.html',1,'appkit::String']]],
+  ['w',['W',['../classappkit_1_1String_1_1W.html#a729510f6cd43305a70a4b12fa7a26a7f',1,'appkit::String::W::W(const W &amp;w)'],['../classappkit_1_1String_1_1W.html#a46753c7aa140fc0ab7a46df6be77cd5e',1,'appkit::String::W::W(wchar_t *w)']]],
+  ['wait',['wait',['../classsyskit_1_1CondVar.html#a1781ccd99b6ccf96cead35c780ce1099',1,'syskit::CondVar::wait()'],['../classsyskit_1_1CondVar.html#a9b58fd4ad49ac2615e04033c921ca2b5',1,'syskit::CondVar::wait(unsigned int timeoutInMsecs)']]],
+  ['waittildone',['waitTilDone',['../classsyskit_1_1Thread.html#a0b3e6f547968ce2fd15da11730281b40',1,'syskit::Thread']]],
+  ['waittilflushed',['waitTilFlushed',['../classappkit_1_1NewsAnchor.html#a192855b1e888960b8cea06f885314491',1,'appkit::NewsAnchor']]],
+  ['waittilfull',['waitTilFull',['../classsyskit_1_1Semaphore.html#a9f0c1dc9ba1b5453af4fbbf78521d718',1,'syskit::Semaphore']]],
+  ['waittilnonempty',['waitTilNonEmpty',['../classsyskit_1_1Semaphore.html#a27a8289788f3ef7129ccb0214f5d6050',1,'syskit::Semaphore']]],
+  ['widen',['widen',['../classappkit_1_1String.html#a3e51ccc0af5a021234a7eae9e879cd1a',1,'appkit::String']]],
+  ['wifstream',['wifstream',['../classappkit_1_1wifstream.html#aee702db6ffcc52ca47a228feadc443f5',1,'appkit::wifstream']]],
+  ['wifstream',['wifstream',['../classappkit_1_1wifstream.html',1,'appkit']]],
+  ['wildcardmask',['wildcardMask',['../classnetkit_1_1Subnet.html#ad52abb5dc204623976bc6bfdb5e1c895',1,'netkit::Subnet']]],
+  ['winapp',['WinApp',['../classappkit_1_1WinApp.html',1,'appkit']]],
+  ['winappcmd',['WinAppCmd',['../classappkit_1_1WinAppCmd.html',1,'appkit']]],
+  ['wincmd',['WinCmd',['../classappkit_1_1WinCmd.html',1,'appkit']]],
+  ['winsock',['Winsock',['../classnetkit_1_1Winsock.html',1,'netkit']]],
+  ['wofstream',['wofstream',['../classappkit_1_1wofstream.html#a5fbb23606c16533369a5114e7f9f8a65',1,'appkit::wofstream']]],
+  ['wofstream',['wofstream',['../classappkit_1_1wofstream.html',1,'appkit']]],
+  ['writetime',['writeTime',['../classappkit_1_1Directory_1_1Attr.html#a60180ee212dcac68ba181768cc26d1e9',1,'appkit::Directory::Attr']]]
 ];

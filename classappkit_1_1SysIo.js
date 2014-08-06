@@ -1,0 +1,25 @@
+var classappkit_1_1SysIo =
+[
+    [ "SysIo", "classappkit_1_1SysIo.html#a3518a3857688557346226c91ba184714", null ],
+    [ "~SysIo", "classappkit_1_1SysIo.html#a2ce1dcde1fac434d7b41f0dfd1657528", null ],
+    [ "SysIo", "classappkit_1_1SysIo.html#a4509b3cd7d560c7a29b9456d9590a597", null ],
+    [ "acl", "classappkit_1_1SysIo.html#a1b500db58ea3e5666b6f729659247b11", null ],
+    [ "addr", "classappkit_1_1SysIo.html#a01af8d91b017a9cfb8a1e137342507f6", null ],
+    [ "clientConfig", "classappkit_1_1SysIo.html#a3dbd4bc33b128522886db02e2aca5c99", null ],
+    [ "ibufSize", "classappkit_1_1SysIo.html#a88a374b4f3514aed03d05836b0ec56ce", null ],
+    [ "ioAddr", "classappkit_1_1SysIo.html#a6efdf0cfed1fb0a5bbda9986409427f8", null ],
+    [ "ioPort", "classappkit_1_1SysIo.html#ace601f1dbc1c51a7bc590f0f19169f62", null ],
+    [ "isOk", "classappkit_1_1SysIo.html#a53a54e28385395cfe73e03f12683159d", null ],
+    [ "logEntriesAreFlushed", "classappkit_1_1SysIo.html#a345fb35b3281d432ddb279db0c0ddf4d", null ],
+    [ "logPathHi", "classappkit_1_1SysIo.html#a8e9569f676736302e4b6bd4224555780", null ],
+    [ "logPathLo", "classappkit_1_1SysIo.html#a2d5b4bc7381ed0d7e70171dd3c7dde13", null ],
+    [ "obufSize", "classappkit_1_1SysIo.html#acaaf5f2fd0fdbd1196416bb7d5d8fb80", null ],
+    [ "onReq", "classappkit_1_1SysIo.html#a53a667b83a186fc0cd1aefab50665478", null ],
+    [ "onRsp", "classappkit_1_1SysIo.html#a792b3c60e0f8d5d6be3c739ad258cb04", null ],
+    [ "reqLoggingIsEnabled", "classappkit_1_1SysIo.html#a96339a23aa7c0f4d3f695fb1a59f673e", null ],
+    [ "rspLoggingIsEnabled", "classappkit_1_1SysIo.html#a38eae659338df7261c2ab1cae113a48c", null ],
+    [ "setAcl", "classappkit_1_1SysIo.html#a68955cc30c2c6a5730a15e501c28a769", null ],
+    [ "setIoAddr", "classappkit_1_1SysIo.html#aa2e43838a070197a5a9bd391b3d5bd2a", null ],
+    [ "setLogMode", "classappkit_1_1SysIo.html#a87b7c7de3eab565875c483d6108f424f", null ],
+    [ "state", "classappkit_1_1SysIo.html#a18233b89ce3de10158adcd1681ed368f", null ]
+];

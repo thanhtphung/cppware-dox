@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,12 +70,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('BufPoolCmd_8cpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,11 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">BufPoolCmd.cpp</div>  </div>
@@ -170,9 +188,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">// Header.</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        String buf;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        rsp += (sprintf(buf, <span class="stringliteral">&quot;%6s%8s%6s%6s%8s%8s%11s%11s%6s\n&quot;</span>,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        rsp += (<a class="code" href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">sprintf</a>(buf, <span class="stringliteral">&quot;%6s%8s%6s%6s%8s%8s%11s%11s%6s\n&quot;</span>,</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="stringliteral">&quot;size&quot;</span>, <span class="stringliteral">&quot;cap&quot;</span>, <span class="stringliteral">&quot;cap0&quot;</span>, <span class="stringliteral">&quot;grow&quot;</span>, <span class="stringliteral">&quot;inUse&quot;</span>, <span class="stringliteral">&quot;wmark&quot;</span>, <span class="stringliteral">&quot;allocs&quot;</span>, <span class="stringliteral">&quot;frees&quot;</span>, <span class="stringliteral">&quot;fails&quot;</span>), buf);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        rsp += (sprintf(buf, <span class="stringliteral">&quot;%6s%8s%6s%6s%8s%8s%11s%11s%6s\n&quot;</span>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        rsp += (<a class="code" href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">sprintf</a>(buf, <span class="stringliteral">&quot;%6s%8s%6s%6s%8s%8s%11s%11s%6s\n&quot;</span>,</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="stringliteral">&quot;----&quot;</span>, <span class="stringliteral">&quot;---&quot;</span>, <span class="stringliteral">&quot;----&quot;</span>, <span class="stringliteral">&quot;----&quot;</span>, <span class="stringliteral">&quot;-----&quot;</span>, <span class="stringliteral">&quot;-----&quot;</span>, <span class="stringliteral">&quot;------&quot;</span>, <span class="stringliteral">&quot;-----&quot;</span>, <span class="stringliteral">&quot;-----&quot;</span>), buf);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">// Body.</span></div>
@@ -181,7 +199,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="classsyskit_1_1BufPool_1_1Stat.html">BufPool::Stat</a> stat(pool, bufSize);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span> ((stat.capacity() &gt; 0) || (stat.usagePeak() &gt; 0))</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                rsp += (sprintf(buf, <span class="stringliteral">&quot;%6u%8u%6u%6d%8u%8u%11llu%11llu%6u\n&quot;</span>,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                rsp += (<a class="code" href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">sprintf</a>(buf, <span class="stringliteral">&quot;%6u%8u%6u%6d%8u%8u%11llu%11llu%6u\n&quot;</span>,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    bufSize,</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    stat.capacity(),</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    stat.initialCap(),</div>
@@ -238,6 +256,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;END_NAMESPACE1</div>
 <div class="ttc" id="crt_8hpp_html"><div class="ttname"><a href="crt_8hpp.html">crt.hpp</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a4ad8f90e612748f3870978e79c236efe"><div class="ttname"><a href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">appkit::sprintf</a></div><div class="ttdeci">int sprintf(String &amp;buf, const char *format,...) GCC_ATTR((format(printf</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00117">crt-linux.cpp:117</a></div></div>
 <div class="ttc" id="classsyskit_1_1BufPool_html_a01a7a4ab2429d7688648f71d77f939da"><div class="ttname"><a href="classsyskit_1_1BufPool.html#a01a7a4ab2429d7688648f71d77f939da">syskit::BufPool::resetStat</a></div><div class="ttdeci">void resetStat()</div><div class="ttdef"><b>Definition:</b> <a href="BufPool_8cpp_source.html#l00240">BufPool.cpp:240</a></div></div>
 <div class="ttc" id="classappkit_1_1Cmd_html_ae77529a4942f4f502b739c044eff1aa7"><div class="ttname"><a href="classappkit_1_1Cmd.html#ae77529a4942f4f502b739c044eff1aa7">appkit::Cmd::respond</a></div><div class="ttdeci">static bool static bool respond(const CmdLine &amp;req, const char *rsp)</div><div class="ttdef"><b>Definition:</b> <a href="Cmd_8cpp_source.html#l00149">Cmd.cpp:149</a></div></div>
 <div class="ttc" id="classappkit_1_1BufPoolCmd_html_ab3009d48989d144580c4adfc5ffe35dc"><div class="ttname"><a href="classappkit_1_1BufPoolCmd.html#ab3009d48989d144580c4adfc5ffe35dc">appkit::BufPoolCmd::xName</a></div><div class="ttdeci">virtual const char * xName(unsigned char cmdIndex) const </div><div class="ttdef"><b>Definition:</b> <a href="BufPoolCmd_8cpp_source.html#l00146">BufPoolCmd.cpp:146</a></div></div>
@@ -248,11 +267,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classsyskit_1_1BufPool_1_1Stat_html"><div class="ttname"><a href="classsyskit_1_1BufPool_1_1Stat.html">syskit::BufPool::Stat</a></div><div class="ttdoc">buffer pool stats </div><div class="ttdef"><b>Definition:</b> <a href="BufPool_8hpp_source.html#l00058">BufPool.hpp:58</a></div></div>
 <div class="ttc" id="classappkit_1_1CmdLine_html"><div class="ttname"><a href="classappkit_1_1CmdLine.html">appkit::CmdLine</a></div><div class="ttdoc">command line </div><div class="ttdef"><b>Definition:</b> <a href="CmdLine_8hpp_source.html#l00017">CmdLine.hpp:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:50 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li><li class="navelem"><b>BufPoolCmd.cpp</b></li>
+    <li class="footer">Generated on Wed Aug 6 2014 08:15:53 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>

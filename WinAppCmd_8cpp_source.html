@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,6 +44,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -62,12 +70,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('WinAppCmd_8cpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,11 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">WinAppCmd.cpp</div>  </div>
@@ -275,7 +293,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="classsyskit_1_1Date.html">Date</a> buildDate(winApp_-&gt;<a class="code" href="classappkit_1_1App.html#a574759c0b2ae17e3c5f776bd51b5e65c">buildDate</a>());</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="classappkit_1_1String.html">String</a> buf;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="classappkit_1_1String.html">String</a> rsp;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    rsp += (sprintf(buf, <span class="stringliteral">&quot;%11s: %ws\n&quot;</span> <span class="stringliteral">&quot;%11s: %s\n&quot;</span> <span class="stringliteral">&quot;%11s: %s\n&quot;</span>,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    rsp += (<a class="code" href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">sprintf</a>(buf, <span class="stringliteral">&quot;%11s: %ws\n&quot;</span> <span class="stringliteral">&quot;%11s: %s\n&quot;</span> <span class="stringliteral">&quot;%11s: %s\n&quot;</span>,</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="stringliteral">&quot;exePath&quot;</span>, winApp_-&gt;<a class="code" href="classappkit_1_1App.html#a721bef9b442be6f8d297faf564d7eab7">path</a>().<a class="code" href="classappkit_1_1String.html#a3e51ccc0af5a021234a7eae9e879cd1a">widen</a>(),</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="stringliteral">&quot;bldDate&quot;</span>, buildDate.asString(dateString),</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="stringliteral">&quot;bldTime&quot;</span>, winApp_-&gt;<a class="code" href="classappkit_1_1App.html#a94a222f3aaa85c6b690aef796b62790a">buildTime</a>()), buf);</div>
@@ -287,7 +305,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="classsyskit_1_1Utc.html">Utc</a> startTime(Process::startTime());</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> upTime = now.<a class="code" href="classsyskit_1_1Utc.html#a8a48fcaa2406c9a77b75899a64846e0b">secs</a>() - startTime.secs();</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">char</span> upTimeString[Date::MaxTimeStringLength + 1];</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    rsp += (swprintf(buf, L<span class="stringliteral">&quot;%11s: %lu\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s:\n&quot;</span>,</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    rsp += (<a class="code" href="namespaceappkit.html#a034ce6729a3bd574db50007bf205fe5f">swprintf</a>(buf, L<span class="stringliteral">&quot;%11s: %lu\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s:\n&quot;</span>,</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        L<span class="stringliteral">&quot;pid&quot;</span>, myProc.id(),</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        L<span class="stringliteral">&quot;prodVer&quot;</span>, module.prodVerString(verString),</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        L<span class="stringliteral">&quot;upTime&quot;</span>, <a class="code" href="classappkit_1_1String.html">String</a>(Date::formatTime(upTimeString, upTime)).<a class="code" href="classappkit_1_1String.html#a3e51ccc0af5a021234a7eae9e879cd1a">widen</a>(),</div>
@@ -295,7 +313,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        L<span class="stringliteral">&quot;---------&quot;</span>), buf);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="classnetkit_1_1Paddr.html">Paddr</a> ioAddr(sysIo_-&gt;<a class="code" href="classappkit_1_1SysIo.html#a6efdf0cfed1fb0a5bbda9986409427f8">ioAddr</a>());</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    rsp += (sprintf(buf, <span class="stringliteral">&quot;%11s: %ws\n&quot;</span> <span class="stringliteral">&quot;%11s: %s\n&quot;</span> <span class="stringliteral">&quot;%11s: %ws\n&quot;</span> <span class="stringliteral">&quot;%11s: 0x%08x\n&quot;</span> <span class="stringliteral">&quot;%11s:\n&quot;</span>,</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    rsp += (<a class="code" href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">sprintf</a>(buf, <span class="stringliteral">&quot;%11s: %ws\n&quot;</span> <span class="stringliteral">&quot;%11s: %s\n&quot;</span> <span class="stringliteral">&quot;%11s: %ws\n&quot;</span> <span class="stringliteral">&quot;%11s: 0x%08x\n&quot;</span> <span class="stringliteral">&quot;%11s:\n&quot;</span>,</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="stringliteral">&quot;alias&quot;</span>, winApp_-&gt;<a class="code" href="classappkit_1_1WinApp.html#a295eded27c57443809dadfe2e311ad13">alias</a>().<a class="code" href="classappkit_1_1String.html#a3e51ccc0af5a021234a7eae9e879cd1a">widen</a>(),</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="stringliteral">&quot;ioAddr&quot;</span>, ioAddr.toString().ascii(),</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="stringliteral">&quot;logDir&quot;</span>, winApp_-&gt;<a class="code" href="classappkit_1_1App.html#aca439c6e39380422c5ef41673c864a31">logDir</a>().<a class="code" href="classappkit_1_1String.html#a3e51ccc0af5a021234a7eae9e879cd1a">widen</a>(),</div>
@@ -308,7 +326,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="code" href="classappkit_1_1String.html">String</a> s(host);</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* osVer = Process::osVer();</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* user = myProc.user();</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    rsp += (swprintf(buf, L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span>,</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    rsp += (<a class="code" href="namespaceappkit.html#a034ce6729a3bd574db50007bf205fe5f">swprintf</a>(buf, L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span> L<span class="stringliteral">&quot;%11s: %s\n&quot;</span>,</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        L<span class="stringliteral">&quot;cmdLine&quot;</span>, winApp_-&gt;<a class="code" href="classappkit_1_1App.html#a6ce9a5a1fb6e72239a5fb2073e3d2873">cmdLine</a>().<a class="code" href="classappkit_1_1CmdLine.html#a4514aaafd355aee1f1c4db656926813c">asString</a>().<a class="code" href="classappkit_1_1String.html#a3e51ccc0af5a021234a7eae9e879cd1a">widen</a>(),</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        L<span class="stringliteral">&quot;curDir&quot;</span>, <a class="code" href="classappkit_1_1Directory.html#ae4347c998c24be6ee658eede283a5275">Directory::getCurrent</a>().<a class="code" href="classappkit_1_1String.html#a3e51ccc0af5a021234a7eae9e879cd1a">widen</a>(),</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        L<span class="stringliteral">&quot;host&quot;</span>, s.widen(),</div>
@@ -381,6 +399,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classappkit_1_1App_html_a574759c0b2ae17e3c5f776bd51b5e65c"><div class="ttname"><a href="classappkit_1_1App.html#a574759c0b2ae17e3c5f776bd51b5e65c">appkit::App::buildDate</a></div><div class="ttdeci">const char * buildDate() const </div><div class="ttdoc">Return the build date in DATE format. </div><div class="ttdef"><b>Definition:</b> <a href="App_8hpp_source.html#l00155">App.hpp:155</a></div></div>
 <div class="ttc" id="crt_8hpp_html"><div class="ttname"><a href="crt_8hpp.html">crt.hpp</a></div></div>
 <div class="ttc" id="classappkit_1_1SysIo_html_aa2e43838a070197a5a9bd391b3d5bd2a"><div class="ttname"><a href="classappkit_1_1SysIo.html#aa2e43838a070197a5a9bd391b3d5bd2a">appkit::SysIo::setIoAddr</a></div><div class="ttdeci">netkit::Paddr setIoAddr(const CmdLine &amp;config)</div><div class="ttdef"><b>Definition:</b> <a href="SysIo_8cpp_source.html#l00187">SysIo.cpp:187</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a4ad8f90e612748f3870978e79c236efe"><div class="ttname"><a href="namespaceappkit.html#a4ad8f90e612748f3870978e79c236efe">appkit::sprintf</a></div><div class="ttdeci">int sprintf(String &amp;buf, const char *format,...) GCC_ATTR((format(printf</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00117">crt-linux.cpp:117</a></div></div>
 <div class="ttc" id="classappkit_1_1WinApp_html"><div class="ttname"><a href="classappkit_1_1WinApp.html">appkit::WinApp</a></div><div class="ttdoc">windows application w/ built-in command handlers </div><div class="ttdef"><b>Definition:</b> <a href="WinApp_8hpp_source.html#l00029">WinApp.hpp:29</a></div></div>
 <div class="ttc" id="classsyskit_1_1Module_html"><div class="ttname"><a href="classsyskit_1_1Module.html">syskit::Module</a></div><div class="ttdoc">loaded module </div><div class="ttdef"><b>Definition:</b> <a href="Module_8hpp_source.html#l00014">Module.hpp:14</a></div></div>
 <div class="ttc" id="classnetkit_1_1Paddr_html"><div class="ttname"><a href="classnetkit_1_1Paddr.html">netkit::Paddr</a></div><div class="ttdoc">IPv4 port address. </div><div class="ttdef"><b>Definition:</b> <a href="Paddr_8hpp_source.html#l00016">Paddr.hpp:16</a></div></div>
@@ -405,6 +424,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classappkit_1_1App_html_a721bef9b442be6f8d297faf564d7eab7"><div class="ttname"><a href="classappkit_1_1App.html#a721bef9b442be6f8d297faf564d7eab7">appkit::App::path</a></div><div class="ttdeci">const String &amp; path() const </div><div class="ttdef"><b>Definition:</b> <a href="App_8hpp_source.html#l00149">App.hpp:149</a></div></div>
 <div class="ttc" id="classappkit_1_1WinAppCmd_html_a1f9751c173e99114f0ccbcde7143d4ad"><div class="ttname"><a href="classappkit_1_1WinAppCmd.html#a1f9751c173e99114f0ccbcde7143d4ad">appkit::WinAppCmd::usage</a></div><div class="ttdeci">virtual const char * usage(unsigned char cmdIndex) const </div><div class="ttdef"><b>Definition:</b> <a href="WinAppCmd_8cpp_source.html#l00278">WinAppCmd.cpp:278</a></div></div>
 <div class="ttc" id="classappkit_1_1WinAppCmd_html"><div class="ttname"><a href="classappkit_1_1WinAppCmd.html">appkit::WinAppCmd</a></div><div class="ttdoc">debug commands for a windows application </div><div class="ttdef"><b>Definition:</b> <a href="WinAppCmd_8hpp_source.html#l00018">WinAppCmd.hpp:18</a></div></div>
+<div class="ttc" id="namespaceappkit_html_a034ce6729a3bd574db50007bf205fe5f"><div class="ttname"><a href="namespaceappkit.html#a034ce6729a3bd574db50007bf205fe5f">appkit::swprintf</a></div><div class="ttdeci">int int swprintf(String &amp;buf, const wchar_t *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="crt-linux_8cpp_source.html#l00137">crt-linux.cpp:137</a></div></div>
 <div class="ttc" id="classappkit_1_1Cmd_html_a4ec7b2ae3c0dc76dfd4d2c8e639051a2"><div class="ttname"><a href="classappkit_1_1Cmd.html#a4ec7b2ae3c0dc76dfd4d2c8e639051a2">appkit::Cmd::formRsp</a></div><div class="ttdeci">static bool formRsp(const CmdLine &amp;req, const char *format,...) GCC_ATTR((format(printf</div><div class="ttdef"><b>Definition:</b> <a href="Cmd_8cpp_source.html#l00120">Cmd.cpp:120</a></div></div>
 <div class="ttc" id="classappkit_1_1BufPoolCmd_html"><div class="ttname"><a href="classappkit_1_1BufPoolCmd.html">appkit::BufPoolCmd</a></div><div class="ttdoc">dbug commands to troubleshoot BufPool usage </div><div class="ttdef"><b>Definition:</b> <a href="BufPoolCmd_8hpp_source.html#l00015">BufPoolCmd.hpp:15</a></div></div>
 <div class="ttc" id="classappkit_1_1WinCmd_html_afe59b9ffb876c92b18ca9dcca98df6e0"><div class="ttname"><a href="classappkit_1_1WinCmd.html#afe59b9ffb876c92b18ca9dcca98df6e0">appkit::WinCmd::onRun</a></div><div class="ttdeci">virtual bool onRun(const CmdLine &amp;req)</div><div class="ttdef"><b>Definition:</b> <a href="WinCmd_8cpp_source.html#l00060">WinCmd.cpp:60</a></div></div>
@@ -421,11 +441,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classappkit_1_1CmdCmd_html"><div class="ttname"><a href="classappkit_1_1CmdCmd.html">appkit::CmdCmd</a></div><div class="ttdoc">dbug commands to troubleshoot Cmd usage </div><div class="ttdef"><b>Definition:</b> <a href="CmdCmd_8hpp_source.html#l00019">CmdCmd.hpp:19</a></div></div>
 <div class="ttc" id="classappkit_1_1WinAppCmd_html_a3fde1eab3a2ac2ab98491a3038d00ae1"><div class="ttname"><a href="classappkit_1_1WinAppCmd.html#a3fde1eab3a2ac2ab98491a3038d00ae1">appkit::WinAppCmd::onRun</a></div><div class="ttdeci">virtual bool onRun(const CmdLine &amp;req)</div><div class="ttdef"><b>Definition:</b> <a href="WinAppCmd_8cpp_source.html#l00256">WinAppCmd.cpp:256</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 5 2014 16:12:51 for c++ gallery by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.7
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9bfcdac1e1e2135fd828ac02115397e6.html">appkit</a></li><li class="navelem"><b>WinAppCmd.cpp</b></li>
+    <li class="footer">Generated on Wed Aug 6 2014 08:15:54 for c++ gallery by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
 </body>
 </html>
