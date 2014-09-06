@@ -1,6 +1,6 @@
 var classsyskit_1_1Bom =
 [
-    [ "MaxSeqLength", "classsyskit_1_1Bom.html#ab59f69ccc13dfc4f130d7d0d7f85a8aea9ed6d8fb512446b3678ed9257b6e4fe5", null ],
+    [ "MaxSeqLength", "classsyskit_1_1Bom.html#aaa88932bf76f81f6cc6a84fc441e826ea9ed6d8fb512446b3678ed9257b6e4fe5", null ],
     [ "type_e", "classsyskit_1_1Bom.html#a0ef20c236f842808b41453fb5a4312d7", [
       [ "None", "classsyskit_1_1Bom.html#a0ef20c236f842808b41453fb5a4312d7a3e382a545eeef1135bc6cc20b58dba7e", null ],
       [ "Utf8", "classsyskit_1_1Bom.html#a0ef20c236f842808b41453fb5a4312d7ab34a88545c8ae381b02f0fcf56555d34", null ],

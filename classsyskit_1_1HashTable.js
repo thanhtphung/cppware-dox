@@ -5,7 +5,7 @@ var classsyskit_1_1HashTable =
     [ "diff_t", "classsyskit_1_1HashTable.html#a16bb22b7d49efd430decf678fc417828", null ],
     [ "hash_t", "classsyskit_1_1HashTable.html#a4ec88f425a555b03b0da05c9ece60f6e", null ],
     [ "item_t", "classsyskit_1_1HashTable.html#a716dad76886b1438c7d35eff4bbfd270", null ],
-    [ "DefaultCap", "classsyskit_1_1HashTable.html#a9f84542eff1091b2e4770076b74ba783ac89ffcb87363bc72fea8f099cb5d6ffb", null ],
+    [ "DefaultCap", "classsyskit_1_1HashTable.html#a2b9b606588c0f9f31ca72ed701db52bcac89ffcb87363bc72fea8f099cb5d6ffb", null ],
     [ "HashTable", "classsyskit_1_1HashTable.html#ab631ed88d045ae43d581cfd47e9c84c2", null ],
     [ "HashTable", "classsyskit_1_1HashTable.html#aff7d1e3f44ff532cf3b31b65bb3b79ee", null ],
     [ "~HashTable", "classsyskit_1_1HashTable.html#a492ec9610a9755ac27c082d146105be5", null ],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['macaddr',['MacAddr',['../classnetkit_1_1MacAddr.html',1,'netkit']]],
-  ['macaddr',['macAddr',['../classnetkit_1_1IpDevice.html#a25f48274bb7bb21292eb5228b3eead58',1,'netkit::IpDevice::macAddr()'],['../classnetkit_1_1MacAddr.html#a3cf233cb1dcd2ee27067c4a166f993ab',1,'netkit::MacAddr::MacAddr()']]],
+  ['macaddr',['macAddr',['../classnetkit_1_1CapDevice.html#ab0f6cef7f5b518c3a737ed7722ae1aad',1,'netkit::CapDevice::macAddr()'],['../classnetkit_1_1IpDevice.html#a25f48274bb7bb21292eb5228b3eead58',1,'netkit::IpDevice::macAddr()'],['../classnetkit_1_1MacAddr.html#a3cf233cb1dcd2ee27067c4a166f993ab',1,'netkit::MacAddr::MacAddr()']]],
   ['macaddrvec',['MacAddrVec',['../classnetkit_1_1MacAddrVec.html',1,'netkit']]],
   ['macaddrvec',['MacAddrVec',['../classnetkit_1_1MacAddrVec.html#a4581717c2858c1a1694b0e4d8e0fd74a',1,'netkit::MacAddrVec']]],
   ['macintf',['MacIntf',['../classnetkit_1_1MacIntf.html',1,'netkit']]],
@@ -31,6 +31,7 @@ var searchData=
   ['messagingwin',['messagingWin',['../classappkit_1_1WinApp.html#a1295ad3d746f6ccbd13bc9a880add902',1,'appkit::WinApp']]],
   ['messenger',['Messenger',['../classappkit_1_1Messenger.html#a3bbf21f34d565ff7d8ada73d033122d0',1,'appkit::Messenger::Messenger(const CmdLine &amp;config, unsigned int timeout0InMsecs=Timeout0, unsigned int timeoutInMsecs=Timeout)'],['../classappkit_1_1Messenger.html#a53ae5530657f4c2d65582646f8291920',1,'appkit::Messenger::Messenger(const netkit::Paddr &amp;remoteAddr, unsigned int timeout0InMsecs=Timeout0, unsigned int timeoutInMsecs=Timeout)'],['../classappkit_1_1Messenger.html#ad92e583c67f1666909c5b1807ef532a8',1,'appkit::Messenger::Messenger(netkit::UdpClient *io)']]],
   ['messenger',['Messenger',['../classappkit_1_1Messenger.html',1,'appkit']]],
+  ['mfflag',['mfFlag',['../classnetkit_1_1RoIpPkt.html#ad76ab4369c150c2341db539ca4fbd799',1,'netkit::RoIpPkt']]],
   ['minaddr',['minAddr',['../classnetkit_1_1IpAddrSet.html#afa478a61c97119fecf715577caff072b',1,'netkit::IpAddrSet']]],
   ['mindelta',['minDelta',['../classsyskit_1_1StatWatch.html#a61eac8253545120e4cf736b34d1d5e62',1,'syskit::StatWatch']]],
   ['minkey',['minKey',['../classappkit_1_1U16Set.html#a61b9ef8e661061be26f6379657768150',1,'appkit::U16Set::minKey()'],['../classappkit_1_1U32Set.html#afc1fc044c858d6ad0239f56520caee97',1,'appkit::U32Set::minKey()'],['../classappkit_1_1U64Set.html#a5c9b0b192ffd22e805b130bbf35e394a',1,'appkit::U64Set::minKey()']]],
@@ -40,7 +41,7 @@ var searchData=
   ['module',['Module',['../classsyskit_1_1Module.html',1,'syskit']]],
   ['module',['Module',['../classsyskit_1_1Module.html#ab905fe10d8cd0047f4b4398ff60d77b1',1,'syskit::Module::Module()'],['../classsyskit_1_1Module.html#af2821217423e91a3f6dbbe8cd862ff64',1,'syskit::Module::Module(const wchar_t *path, const unsigned char *addr, unsigned int size)']]],
   ['mom',['mom',['../classappkit_1_1XmlElement.html#ad1fe7c291f77a5b5cd7fe5f3f3863731',1,'appkit::XmlElement::mom()'],['../classappkit_1_1XmlElement.html#ab85924b42651c7b5e34d0a5931f41bc6',1,'appkit::XmlElement::mom() const ']]],
-  ['monitor',['monitor',['../classappkit_1_1CmdMap.html#a8eccdb896ac22fbda0d6a50b0d2e92d7',1,'appkit::CmdMap']]],
+  ['monitor',['monitor',['../classappkit_1_1CmdMap.html#a8eccdb896ac22fbda0d6a50b0d2e92d7',1,'appkit::CmdMap::monitor()'],['../classnetkit_1_1NetCap.html#aa4b96e6348093d6d2be645818566e31e',1,'netkit::NetCap::monitor()']]],
   ['monitorcrash',['monitorCrash',['../classsyskit_1_1Thread.html#addecce719a22accbb8e5bc200ef53ea9',1,'syskit::Thread']]],
   ['monitorextraction',['monitorExtraction',['../classsyskit_1_1RoZipped.html#a6fbdbfd30578c973555b7cfa69b345b1',1,'syskit::RoZipped']]],
   ['msecspertick',['msecsPerTick',['../classsyskit_1_1TickTime.html#a32a8c326a76b06631472d06be582416b',1,'syskit::TickTime']]],

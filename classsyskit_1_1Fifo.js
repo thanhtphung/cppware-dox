@@ -2,7 +2,7 @@ var classsyskit_1_1Fifo =
 [
     [ "Stat", "classsyskit_1_1Fifo_1_1Stat.html", "classsyskit_1_1Fifo_1_1Stat" ],
     [ "item_t", "classsyskit_1_1Fifo.html#a63ce5497f22ff6636957828b521c680f", null ],
-    [ "DefaultCap", "classsyskit_1_1Fifo.html#a3e39363ffc92687be11ba454a3119f4ca7b0fbc3b11e4a4ae637ccc8f4287adb6", null ],
+    [ "DefaultCap", "classsyskit_1_1Fifo.html#a6becf412febc62a52a1d58d4cfd6bdaca7b0fbc3b11e4a4ae637ccc8f4287adb6", null ],
     [ "Fifo", "classsyskit_1_1Fifo.html#a09eb3528714ddf87eb8a5cbd2ab6148a", null ],
     [ "Fifo", "classsyskit_1_1Fifo.html#a76c42af5ffb3dd7a805d3dfcad9a33b4", null ],
     [ "~Fifo", "classsyskit_1_1Fifo.html#a096aa0bb14a8fe6697df0d146dc14aa3", null ],

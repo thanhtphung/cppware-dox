@@ -4,7 +4,7 @@ var classsyskit_1_1Vec =
     [ "compare_t", "classsyskit_1_1Vec.html#af0fc76369d72a359f98ec83a314452a2", null ],
     [ "diff_t", "classsyskit_1_1Vec.html#a477f4a06bea6d679a771446750506d07", null ],
     [ "item_t", "classsyskit_1_1Vec.html#a9376a19b0756508505278c2106942688", null ],
-    [ "DefaultCap", "classsyskit_1_1Vec.html#a1fbbe7e7280bd1711277bc30792876bba66addd46723e35fff29e46aebbb77396", null ],
+    [ "DefaultCap", "classsyskit_1_1Vec.html#a7521fc4b678cf28cc1aeb9e7d7ecbb5ba66addd46723e35fff29e46aebbb77396", null ],
     [ "Vec", "classsyskit_1_1Vec.html#a1f4d69423d77f9adb09c7bff09e7f2f6", null ],
     [ "Vec", "classsyskit_1_1Vec.html#a8a962abac52fb7c7b1c26f95991cbc44", null ],
     [ "Vec", "classsyskit_1_1Vec.html#ad6c7ce81629542ac31f91e44985a0fc8", null ],

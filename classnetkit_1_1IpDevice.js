@@ -1,9 +1,9 @@
 var classnetkit_1_1IpDevice =
 [
-    [ "LoopbackNet", "classnetkit_1_1IpDevice.html#a9d5cb92795fcdb26341a1838e23a13aaa5250bdcf784c074631dee5155e82e7ad", null ],
-    [ "MaxAddrIndex", "classnetkit_1_1IpDevice.html#a9d5cb92795fcdb26341a1838e23a13aaa3a730c798f675d74b0277212e0d96741", null ],
-    [ "MaxIndex", "classnetkit_1_1IpDevice.html#a9d5cb92795fcdb26341a1838e23a13aaafb2cedd493e4503cf563c5544164e9f9", null ],
-    [ "NumAddrCategories", "classnetkit_1_1IpDevice.html#a9d5cb92795fcdb26341a1838e23a13aaa296687d75c090de61005de3d4ac85a72", null ],
+    [ "LoopbackNet", "classnetkit_1_1IpDevice.html#a48fc7897cc85c0643e31cb83374571daa5250bdcf784c074631dee5155e82e7ad", null ],
+    [ "MaxAddrIndex", "classnetkit_1_1IpDevice.html#a48fc7897cc85c0643e31cb83374571daa3a730c798f675d74b0277212e0d96741", null ],
+    [ "MaxIndex", "classnetkit_1_1IpDevice.html#a48fc7897cc85c0643e31cb83374571daafb2cedd493e4503cf563c5544164e9f9", null ],
+    [ "NumAddrCategories", "classnetkit_1_1IpDevice.html#a48fc7897cc85c0643e31cb83374571daa296687d75c090de61005de3d4ac85a72", null ],
     [ "addrCategory_e", "classnetkit_1_1IpDevice.html#ada940c582144b290647854ee1ee5f56c", [
       [ "Broadcast", "classnetkit_1_1IpDevice.html#ada940c582144b290647854ee1ee5f56caf9ba9abd8d6cf1f6a796af54c36c6e95", null ],
       [ "Far", "classnetkit_1_1IpDevice.html#ada940c582144b290647854ee1ee5f56caf76417857c1f4012d5d13937bab15593", null ],
@@ -11,7 +11,7 @@ var classnetkit_1_1IpDevice =
       [ "Loopback", "classnetkit_1_1IpDevice.html#ada940c582144b290647854ee1ee5f56ca206b3abb71384ca46cc4bcb0eaff3249", null ],
       [ "Near", "classnetkit_1_1IpDevice.html#ada940c582144b290647854ee1ee5f56caab8d03b08832c875a9a5446024637d07", null ]
     ] ],
-    [ "IpDevice", "classnetkit_1_1IpDevice.html#a3dd2fbc04c3b07f46521bdb995b6ccf0", null ],
+    [ "IpDevice", "classnetkit_1_1IpDevice.html#aa1656155ca9171d3be8ad7e93c8e2efd", null ],
     [ "~IpDevice", "classnetkit_1_1IpDevice.html#a619abd73df331873f58ba7e282a20d11", null ],
     [ "addr", "classnetkit_1_1IpDevice.html#adb728204dd1dcde41e3174ac53c61cd2", null ],
     [ "addrIsNear", "classnetkit_1_1IpDevice.html#aa6f7cc0e448aeca48fca7a6a779015e3", null ],
@@ -24,5 +24,5 @@ var classnetkit_1_1IpDevice =
     [ "name", "classnetkit_1_1IpDevice.html#afa9bd5e8bafb324df09cd7436e7454b4", null ],
     [ "netMask", "classnetkit_1_1IpDevice.html#a95654c397fdd77fbeb0f2a976adc010a", null ],
     [ "numAddrs", "classnetkit_1_1IpDevice.html#aedeabcc9eca0e3d8731aeca61269bfa2", null ],
-    [ "operator=", "classnetkit_1_1IpDevice.html#a7cb46436a67c06e86073653cecdb09ea", null ]
+    [ "operator=", "classnetkit_1_1IpDevice.html#a0610c9336c4edbdae8eb25ee5f94844b", null ]
 ];

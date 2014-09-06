@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['netcap',['NetCap',['../classnetkit_1_1NetCap.html',1,'netkit']]],
   ['netdemon',['NetDemon',['../classappkit_1_1NetDemon.html',1,'appkit']]],
   ['netdemoncmd',['NetDemonCmd',['../classappkit_1_1NetDemonCmd.html',1,'appkit']]],
   ['newsanchor',['NewsAnchor',['../classappkit_1_1NewsAnchor.html',1,'appkit']]],

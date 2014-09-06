@@ -1,7 +1,7 @@
 var searchData=
 [
   ['echoreq',['echoReq',['../classappkit_1_1CmdAgent.html#a6751ba9e19bb48754cd486f1880975e9',1,'appkit::CmdAgent::echoReq()'],['../classappkit_1_1Messenger.html#a532842d8daef6742abef215485233cd0',1,'appkit::Messenger::echoReq()']]],
-  ['empty',['empty',['../classappkit_1_1String.html#a18bf0f63486120de7ebcb50f1c856d49',1,'appkit::String::empty()'],['../classsyskit_1_1SigTrap.html#a8cacd75add88828000fdfb90932171d5',1,'syskit::SigTrap::empty()'],['../classsyskit_1_1Vec.html#a34085cd991f7730b904fa093f34c8830',1,'syskit::Vec::empty()'],['../classappkit_1_1Set.html#abd89c43ec8daa6d87bfc513fba7169b9a7e1a382b6eabe6328b3a832a2d1387a5',1,'appkit::Set::Empty()']]],
+  ['empty',['Empty',['../classappkit_1_1Set.html#abd89c43ec8daa6d87bfc513fba7169b9a7e1a382b6eabe6328b3a832a2d1387a5',1,'appkit::Set::Empty()'],['../classappkit_1_1String.html#a18bf0f63486120de7ebcb50f1c856d49',1,'appkit::String::empty()'],['../classsyskit_1_1SigTrap.html#a8cacd75add88828000fdfb90932171d5',1,'syskit::SigTrap::empty()'],['../classsyskit_1_1Vec.html#a34085cd991f7730b904fa093f34c8830',1,'syskit::Vec::empty()']]],
   ['emptyelement',['EmptyElement',['../classappkit_1_1XmlDoc_1_1EmptyElement.html#a0a1f10b8e27c855cba03c618413a93fe',1,'appkit::XmlDoc::EmptyElement']]],
   ['emptyelement',['EmptyElement',['../classappkit_1_1XmlDoc_1_1EmptyElement.html',1,'appkit::XmlDoc']]],
   ['emptysubset',['EmptySubset',['../classappkit_1_1Set.html#abd89c43ec8daa6d87bfc513fba7169b9aeb9e2832d9bbdd6cc9340cae37815e71',1,'appkit::Set']]],

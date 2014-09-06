@@ -1,7 +1,7 @@
 var classsyskit_1_1BufPool =
 [
     [ "Stat", "classsyskit_1_1BufPool_1_1Stat.html", "classsyskit_1_1BufPool_1_1Stat" ],
-    [ "MaxBufSize", "classsyskit_1_1BufPool.html#a23e988cd122ece7337a0db91ba219302a272af01fdb0333a8846b8f5d717e0331", null ],
+    [ "MaxBufSize", "classsyskit_1_1BufPool.html#aed2656e73ed9591b7753437eb59bd1eaa272af01fdb0333a8846b8f5d717e0331", null ],
     [ "BufPool", "classsyskit_1_1BufPool.html#a24c7073e64c279e78ada2a595444c956", null ],
     [ "~BufPool", "classsyskit_1_1BufPool.html#af1879c6a8298dff78fb89e080a11cf55", null ],
     [ "allocate", "classsyskit_1_1BufPool.html#ad8e418f46ebf8f6c5945f7e6500c90bc", null ],

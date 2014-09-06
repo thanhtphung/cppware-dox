@@ -2,7 +2,7 @@ var classsyskit_1_1Bst =
 [
     [ "compare_t", "classsyskit_1_1Bst.html#a4b408d4b7fbc5d1bf699b29da59be8cd", null ],
     [ "item_t", "classsyskit_1_1Bst.html#aed164736d0f83fc415f25de9e9471d07", null ],
-    [ "DefaultCap", "classsyskit_1_1Bst.html#aa7c84ce941ac530f03d43b414e00f731a2c4377f1957e29e009740e0e46cc9acf", null ],
+    [ "DefaultCap", "classsyskit_1_1Bst.html#ad691ccec15ad0f7d38017be1edd21438a2c4377f1957e29e009740e0e46cc9acf", null ],
     [ "Bst", "classsyskit_1_1Bst.html#a558386db0fc3145eae30a9930e90db7c", null ],
     [ "Bst", "classsyskit_1_1Bst.html#ad48fd52845758a098a9a4d7c50887343", null ],
     [ "Bst", "classsyskit_1_1Bst.html#ab7d58c83079f6e7838d6c69595c5e34b", null ],

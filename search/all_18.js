@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['xdigit',['XDIGIT',['../namespacesyskit.html#ae8fbd1571abc66fea9ee2d95a1ed7cb7',1,'syskit::XDIGIT()'],['../namespacesyskit.html#afbf2f1d0155ca0f6cf2b125b4281159b',1,'syskit::xdigit()']]],
+  ['xdigit',['xdigit',['../namespacesyskit.html#afbf2f1d0155ca0f6cf2b125b4281159b',1,'syskit::xdigit()'],['../namespacesyskit.html#ae8fbd1571abc66fea9ee2d95a1ed7cb7',1,'syskit::XDIGIT()']]],
   ['xdigitstou8',['xdigitsToU8',['../classappkit_1_1U8.html#a7054fc14f6de49ca9ce587e5e9a5ebc9',1,'appkit::U8']]],
   ['xdigittonibble',['xdigitToNibble',['../classappkit_1_1U8.html#a16dc37ca9e6b961cb788961ec2c327b6',1,'appkit::U8']]],
   ['xmldoc',['XmlDoc',['../classappkit_1_1XmlDoc.html',1,'appkit']]],

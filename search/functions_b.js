@@ -1,6 +1,8 @@
 var searchData=
 [
+  ['lastcaptime',['lastCapTime',['../classnetkit_1_1NetCap.html#a7c93d1614487d8d14ef8e31124f24a78',1,'netkit::NetCap']]],
   ['lastclearbit',['lastClearBit',['../classsyskit_1_1BitVec32.html#a03a31ede8c78415c603062dc09f5f49f',1,'syskit::BitVec32::lastClearBit()'],['../classsyskit_1_1BitVec64.html#a700b6e3ac7650b50d8dafeb0b4f428f8',1,'syskit::BitVec64::lastClearBit()']]],
+  ['lasterr',['lastErr',['../classnetkit_1_1CapFile.html#aad4e8a07bce00609531fd6b7f00d66e9',1,'netkit::CapFile::lastErr()'],['../classnetkit_1_1NetCap.html#af0cca74c74272f0dcf2e7d511dce53c7',1,'netkit::NetCap::lastErr()']]],
   ['lastsetbit',['lastSetBit',['../classsyskit_1_1BitVec32.html#a37987e25de2ad475a9e6e70978c0efaf',1,'syskit::BitVec32::lastSetBit()'],['../classsyskit_1_1BitVec64.html#ad446af237ab00fd1cafeb65de744640e',1,'syskit::BitVec64::lastSetBit()']]],
   ['length',['length',['../classappkit_1_1String.html#a982f3379274ea95e1dc36412994318c1',1,'appkit::String::length()'],['../classsyskit_1_1ItemQ_1_1Stat.html#a241515859e006ce38e3436f29a7ada38',1,'syskit::ItemQ::Stat::length()']]],
   ['lexee',['lexee',['../classappkit_1_1XmlLexer.html#a650ead88de0f287e78fa30ba3acee315',1,'appkit::XmlLexer::lexee() const '],['../classappkit_1_1XmlLexer.html#a99222aa5911162287140d9ae9b2f2713',1,'appkit::XmlLexer::lexee(unsigned int &amp;byteSize) const ']]],

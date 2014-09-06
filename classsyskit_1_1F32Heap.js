@@ -1,7 +1,7 @@
 var classsyskit_1_1F32Heap =
 [
     [ "item_t", "classsyskit_1_1F32Heap.html#a66cf73c50a2f0791fb346714422db0e0", null ],
-    [ "DefaultCap", "classsyskit_1_1F32Heap.html#aa7a46e287f6d0feeca4380505b0d974eac7af322b35e978173a0c4aa790f4b882", null ],
+    [ "DefaultCap", "classsyskit_1_1F32Heap.html#aa58050ee2aa7e08cf098824c04b6ebadac7af322b35e978173a0c4aa790f4b882", null ],
     [ "F32Heap", "classsyskit_1_1F32Heap.html#a699a9ceba36625885ccfa19cb47cc6c0", null ],
     [ "F32Heap", "classsyskit_1_1F32Heap.html#afa6d57e5e48b9879a48d5099a78039b2", null ],
     [ "~F32Heap", "classsyskit_1_1F32Heap.html#a94668629787fe9070f41561cfcb4852d", null ],

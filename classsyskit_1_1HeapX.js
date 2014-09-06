@@ -3,7 +3,7 @@ var classsyskit_1_1HeapX =
     [ "compare_t", "classsyskit_1_1HeapX.html#a6f06b1e4fb88306bdb06cd37e648e66a", null ],
     [ "handle_t", "classsyskit_1_1HeapX.html#a7e70350254ee4b18d5ef7bd552b7d08d", null ],
     [ "item_t", "classsyskit_1_1HeapX.html#a40d3af61fdc142e7cc695469a5df12e6", null ],
-    [ "DefaultCap", "classsyskit_1_1HeapX.html#af0ac11317a6e5862f91fb59e9c123da4a28bc494b173e13818385c4dda78029f2", null ],
+    [ "DefaultCap", "classsyskit_1_1HeapX.html#a43fd1f5746b8d84f55d0047a7513efeba28bc494b173e13818385c4dda78029f2", null ],
     [ "HeapX", "classsyskit_1_1HeapX.html#aa55e48f8b2965f18f5c8a655db2a927b", null ],
     [ "HeapX", "classsyskit_1_1HeapX.html#a551c1e2121de42f0c5d3e43d75b38cc3", null ],
     [ "~HeapX", "classsyskit_1_1HeapX.html#ab6bcc039ae26391a4b5d2f3fa316648d", null ],

@@ -1,7 +1,7 @@
 var classsyskit_1_1SpinSection =
 [
     [ "Lock", "classsyskit_1_1SpinSection_1_1Lock.html", "classsyskit_1_1SpinSection_1_1Lock" ],
-    [ "DefaultSpinCount", "classsyskit_1_1SpinSection.html#a1bfb622ecc237339d59be17e9ee6915da7e5679ddca446cac6a155e8eb23909e4", null ],
+    [ "DefaultSpinCount", "classsyskit_1_1SpinSection.html#ae5083335d52bd90d4cbf79a46e74274aa7e5679ddca446cac6a155e8eb23909e4", null ],
     [ "SpinSection", "classsyskit_1_1SpinSection.html#a0979613871fc9e6adbe11f8535cc7e0f", null ],
     [ "~SpinSection", "classsyskit_1_1SpinSection.html#a2044560bf0b11cba182e0119a6b8e1f3", null ],
     [ "isOk", "classsyskit_1_1SpinSection.html#a02d0772ff873fb7f5114928c2bdd7dbb", null ],

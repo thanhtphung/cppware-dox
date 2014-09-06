@@ -2,7 +2,7 @@ var classsyskit_1_1U64Fifo =
 [
     [ "Stat", "classsyskit_1_1U64Fifo_1_1Stat.html", "classsyskit_1_1U64Fifo_1_1Stat" ],
     [ "item_t", "classsyskit_1_1U64Fifo.html#a222d6b47a3a986af5b3f91ec4f17c158", null ],
-    [ "DefaultCap", "classsyskit_1_1U64Fifo.html#a1bf7a8cace29f8e115cc42ae8c7ddae4af3186b9129dda75156c5187e380991b5", null ],
+    [ "DefaultCap", "classsyskit_1_1U64Fifo.html#a09f54dcbf0d920406179fed16e1ec091af3186b9129dda75156c5187e380991b5", null ],
     [ "U64Fifo", "classsyskit_1_1U64Fifo.html#aabee9db0a3ae70778511ed125b0606e0", null ],
     [ "U64Fifo", "classsyskit_1_1U64Fifo.html#acdd232eaa426e631302d057aaac618b4", null ],
     [ "~U64Fifo", "classsyskit_1_1U64Fifo.html#af0820ea188a6e7cdbced83bf97e47050", null ],

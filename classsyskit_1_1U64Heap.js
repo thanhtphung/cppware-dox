@@ -1,7 +1,7 @@
 var classsyskit_1_1U64Heap =
 [
     [ "item_t", "classsyskit_1_1U64Heap.html#af679c771b154f2261573557fac5c5ce1", null ],
-    [ "DefaultCap", "classsyskit_1_1U64Heap.html#a865ea4a5d109ed69203ddf6428a8e26ca1bca0f17efa6a9eda8af6ba03bb9e3cd", null ],
+    [ "DefaultCap", "classsyskit_1_1U64Heap.html#ab6fea05b7d39a9cd41cb2d0b8a020799a1bca0f17efa6a9eda8af6ba03bb9e3cd", null ],
     [ "U64Heap", "classsyskit_1_1U64Heap.html#add2a5acfbc83525c159c3e6d513c76dd", null ],
     [ "U64Heap", "classsyskit_1_1U64Heap.html#a96f900352d2fcf51c0aec52cb2e8f698", null ],
     [ "~U64Heap", "classsyskit_1_1U64Heap.html#a6d6cbc82e34f9a7d402f2d033781e671", null ],

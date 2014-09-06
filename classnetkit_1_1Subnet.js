@@ -1,7 +1,7 @@
 var classnetkit_1_1Subnet =
 [
-    [ "BitMaskStrLength", "classnetkit_1_1Subnet.html#a18a6732a72576f162c98fbda2fdd3ca1a150e0a8d63e5c24d3eff3e35de5f41c1", null ],
-    [ "StrLength", "classnetkit_1_1Subnet.html#a18a6732a72576f162c98fbda2fdd3ca1a98f44b413a58252eb70a0bc377fff5ec", null ],
+    [ "BitMaskStrLength", "classnetkit_1_1Subnet.html#a8dd0ad574e56d0b5cb95d4c26dd22f15a150e0a8d63e5c24d3eff3e35de5f41c1", null ],
+    [ "StrLength", "classnetkit_1_1Subnet.html#a8dd0ad574e56d0b5cb95d4c26dd22f15a98f44b413a58252eb70a0bc377fff5ec", null ],
     [ "clas_e", "classnetkit_1_1Subnet.html#a41ac4e21a51cfc559ba164b689bbbd8d", [
       [ "A", "classnetkit_1_1Subnet.html#a41ac4e21a51cfc559ba164b689bbbd8da827a6a91a820f1bb807c6d9967e4db37", null ],
       [ "B", "classnetkit_1_1Subnet.html#a41ac4e21a51cfc559ba164b689bbbd8daf4cf602e7b79e0898cfedd694012d141", null ],

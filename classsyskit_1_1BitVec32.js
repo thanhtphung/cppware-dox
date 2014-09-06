@@ -2,9 +2,9 @@ var classsyskit_1_1BitVec32 =
 [
     [ "Itor", "classsyskit_1_1BitVec32_1_1Itor.html", "classsyskit_1_1BitVec32_1_1Itor" ],
     [ "word_t", "classsyskit_1_1BitVec32.html#adf3882e013d57563d18520df6d00fe1f", null ],
-    [ "BitsPerWord", "classsyskit_1_1BitVec32.html#a93a909740ea2dfb79abbb34b1557e348afb3f3320cb05e3c9c8d9729d8ac40efb", null ],
-    [ "BytesPerWord", "classsyskit_1_1BitVec32.html#a93a909740ea2dfb79abbb34b1557e348a80283dda195a2a4b525fdf1d533b05ff", null ],
-    [ "DefaultMaxBits", "classsyskit_1_1BitVec32.html#a93a909740ea2dfb79abbb34b1557e348a65fa90111a529c7d971297bc89c98d58", null ],
+    [ "BitsPerWord", "classsyskit_1_1BitVec32.html#afc714addd980b7828d748eecfdb94af5afb3f3320cb05e3c9c8d9729d8ac40efb", null ],
+    [ "BytesPerWord", "classsyskit_1_1BitVec32.html#afc714addd980b7828d748eecfdb94af5a80283dda195a2a4b525fdf1d533b05ff", null ],
+    [ "DefaultMaxBits", "classsyskit_1_1BitVec32.html#afc714addd980b7828d748eecfdb94af5a65fa90111a529c7d971297bc89c98d58", null ],
     [ "BitVec32", "classsyskit_1_1BitVec32.html#a2a2ff042e2b20afc5864e1e13a546beb", null ],
     [ "BitVec32", "classsyskit_1_1BitVec32.html#a50eb92cf61f13116f01fa12aa7a068fd", null ],
     [ "BitVec32", "classsyskit_1_1BitVec32.html#af6a22963219b655ad4632602fe0a4c62", null ],

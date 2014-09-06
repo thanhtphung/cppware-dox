@@ -1,7 +1,7 @@
 var classnetkit_1_1MacAddr =
 [
-    [ "RawLength", "classnetkit_1_1MacAddr.html#a12e7d96907f1230039a53542428a1ab5ac23fd190bb5dfa8b5f7e10de3cb21ee5", null ],
-    [ "StrLength", "classnetkit_1_1MacAddr.html#a12e7d96907f1230039a53542428a1ab5aad8fd11b75923f5610e72e96f942cdaf", null ],
+    [ "RawLength", "classnetkit_1_1MacAddr.html#ac61de9f2324cf678db338b88e3b4e751ac23fd190bb5dfa8b5f7e10de3cb21ee5", null ],
+    [ "StrLength", "classnetkit_1_1MacAddr.html#ac61de9f2324cf678db338b88e3b4e751aad8fd11b75923f5610e72e96f942cdaf", null ],
     [ "MacAddr", "classnetkit_1_1MacAddr.html#a8550f1731262c704e74c356e7566d842", null ],
     [ "MacAddr", "classnetkit_1_1MacAddr.html#a46f29f824731a0dfe0172460436d0f09", null ],
     [ "MacAddr", "classnetkit_1_1MacAddr.html#af2a3cf0a6ce9bf26e169d8b5576d0225", null ],

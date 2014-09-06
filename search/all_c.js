@@ -1,6 +1,8 @@
 var searchData=
 [
+  ['lastcaptime',['lastCapTime',['../classnetkit_1_1NetCap.html#a7c93d1614487d8d14ef8e31124f24a78',1,'netkit::NetCap']]],
   ['lastclearbit',['lastClearBit',['../classsyskit_1_1BitVec32.html#a03a31ede8c78415c603062dc09f5f49f',1,'syskit::BitVec32::lastClearBit()'],['../classsyskit_1_1BitVec64.html#a700b6e3ac7650b50d8dafeb0b4f428f8',1,'syskit::BitVec64::lastClearBit()']]],
+  ['lasterr',['lastErr',['../classnetkit_1_1CapFile.html#aad4e8a07bce00609531fd6b7f00d66e9',1,'netkit::CapFile::lastErr()'],['../classnetkit_1_1NetCap.html#af0cca74c74272f0dcf2e7d511dce53c7',1,'netkit::NetCap::lastErr()']]],
   ['lastsetbit',['lastSetBit',['../classsyskit_1_1BitVec32.html#a37987e25de2ad475a9e6e70978c0efaf',1,'syskit::BitVec32::lastSetBit()'],['../classsyskit_1_1BitVec64.html#ad446af237ab00fd1cafeb65de744640e',1,'syskit::BitVec64::lastSetBit()']]],
   ['length',['length',['../classappkit_1_1String.html#a982f3379274ea95e1dc36412994318c1',1,'appkit::String::length()'],['../classsyskit_1_1ItemQ_1_1Stat.html#a241515859e006ce38e3436f29a7ada38',1,'syskit::ItemQ::Stat::length()']]],
   ['lexee',['lexee',['../classappkit_1_1XmlLexer.html#a650ead88de0f287e78fa30ba3acee315',1,'appkit::XmlLexer::lexee() const '],['../classappkit_1_1XmlLexer.html#a99222aa5911162287140d9ae9b2f2713',1,'appkit::XmlLexer::lexee(unsigned int &amp;byteSize) const ']]],
@@ -14,11 +16,11 @@ var searchData=
   ['loaddrat',['loAddrAt',['../classnetkit_1_1IpAddrSet.html#a59c441ab3052b94414b390167a3c9647',1,'netkit::IpAddrSet']]],
   ['loadfrom',['loadFrom',['../classappkit_1_1XmlDoc.html#ad842ddf20691c27ea50ba3185f8a5a68',1,'appkit::XmlDoc::loadFrom(const String &amp;path)'],['../classappkit_1_1XmlDoc.html#ad15e2aa2f818972f26682c4b43640d0d',1,'appkit::XmlDoc::loadFrom(const char *path)'],['../classappkit_1_1XmlDoc.html#a821d53a479ae354156f4e42060922609',1,'appkit::XmlDoc::loadFrom(const std::istream &amp;is)'],['../classsyskit_1_1MappedFile.html#a7c206ab704e78fb886dba051a8640f63',1,'syskit::MappedFile::loadFrom()'],['../classsyskit_1_1MappedTxtFile.html#a3432210da1eb291579bce89d2a767ac7',1,'syskit::MappedTxtFile::loadFrom()']]],
   ['loadfromxml',['loadFromXml',['../classappkit_1_1XmlDoc.html#a593ad74723f6e6c9d442c304447bf4d4',1,'appkit::XmlDoc']]],
-  ['lock',['Lock',['../classsyskit_1_1Mutex_1_1Lock.html',1,'syskit::Mutex']]],
-  ['lock',['Lock',['../classsyskit_1_1CriSection_1_1Lock.html',1,'syskit::CriSection']]],
   ['lock',['lock',['../classsyskit_1_1CriSection.html#a92c597b966aac1942b02454d3064830a',1,'syskit::CriSection::lock()'],['../classsyskit_1_1Mutex.html#a28b81f3afd0a3f0d7d5a7c8bb1f2be20',1,'syskit::Mutex::lock()'],['../classsyskit_1_1SpinSection.html#a707a3c2b5577d44bd3ab2ae1b25c1a63',1,'syskit::SpinSection::lock()'],['../classsyskit_1_1CriSection_1_1Lock.html#a80e88030f69165b94a9de67fde41db4a',1,'syskit::CriSection::Lock::Lock()'],['../classsyskit_1_1Mutex_1_1Lock.html#a6abb7365000ba64fb4e1d2185b1783b6',1,'syskit::Mutex::Lock::Lock()'],['../classsyskit_1_1Semaphore_1_1Lock.html#a885f28ddb89bee4450e60211e431087c',1,'syskit::Semaphore::Lock::Lock(Semaphore &amp;semaphore)'],['../classsyskit_1_1Semaphore_1_1Lock.html#a02aae77f0e47fd4c22ae710341885a54',1,'syskit::Semaphore::Lock::Lock(Semaphore &amp;semaphore, unsigned int numTokens)'],['../classsyskit_1_1SpinSection_1_1Lock.html#a91c9d19fc2af6d6230f7ef13a8b51139',1,'syskit::SpinSection::Lock::Lock()']]],
+  ['lock',['Lock',['../classsyskit_1_1Mutex_1_1Lock.html',1,'syskit::Mutex']]],
   ['lock',['Lock',['../classsyskit_1_1Semaphore_1_1Lock.html',1,'syskit::Semaphore']]],
   ['lock',['Lock',['../classsyskit_1_1SpinSection_1_1Lock.html',1,'syskit::SpinSection']]],
+  ['lock',['Lock',['../classsyskit_1_1CriSection_1_1Lock.html',1,'syskit::CriSection']]],
   ['lockmutex',['lockMutex',['../classsyskit_1_1CondVar.html#a84330cad7b20f8b882b8cd2edf596ac4',1,'syskit::CondVar']]],
   ['log',['log',['../classappkit_1_1Cmd.html#a01f175642d589eec151bd608c81bf5b0',1,'appkit::Cmd']]],
   ['logdir',['logDir',['../classappkit_1_1App.html#aca439c6e39380422c5ef41673c864a31',1,'appkit::App']]],
